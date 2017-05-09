@@ -1,0 +1,7 @@
+author: Priya Ramachandran
+author_email: happyfeet@lovelldsouza.com
+baseurl: /happyfeet
+description: Stories, photographs and thoughts from a travelling couple taking walks and mapping their routes, while backpacking around India, and parts of the world..
+exclude: ['README.md']
+markdown: redcarpet
+name: The Happy Feet Website
