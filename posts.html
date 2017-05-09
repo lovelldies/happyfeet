@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h2>Posts</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post. }}">Read more...</a>
+    </li>
+  {% endfor %}
+</ul>
