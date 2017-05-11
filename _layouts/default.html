@@ -1,18 +1,45 @@
-<!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <title>Happy Feet!</title>
-  <link href="{{ site.baseurl }}/assets/css/common.css" rel="stylesheet">
-</head>
-<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<header>
-  <h1>The Happy Feet Website.</h1>
-  {% include nav.html %}
-</header>
+  {% if page.title %}
+    <title>{{ page.title }} | Happy Feet!</title>
+  {% else %}
+    <title>Happy Feet! Stories, photographs and thoughts from a travelling couple.</title>
+  {% endif %}
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/override.css" rel="stylesheet">
+</head>
+<body class="">
+
+<div id="wrapper" class="container-fluid">
+
+<section class="banner onload-image-fade-in onload-content-fade-in style5 fullscreen content-align-center image-position-center invert">
+  <div class="content">
+    <h1>Happy Feet!</h1>
+    <p class="major">Stories, photographs and thoughts from a travelling couple taking walks and mapping their routes, while backpacking around India, and parts of the world.</p>
+    {% include nav.html %}
+    <ul class="actions vertical">
+      <li><a href="#first" class="button big wide smooth-scroll-middle">Cute. Show me more</a></li>
+    </ul>
+  </div>
+  <div class="image">
+    <img src="http://happyfeet.us/wp-content/uploads/2015/03/evenings-old-goa.jpg" alt="">
+  </div>
+</section>
 
 {{ content }}
 
+
+  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/jquery.scrollex.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/jquery.scrolly.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/util.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</div>
 </body>
 </html>

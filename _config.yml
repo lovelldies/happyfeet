@@ -5,3 +5,4 @@ description: Stories, photographs and thoughts from a travelling couple taking w
 exclude: ['README.md']
 markdown: redcarpet
 name: The Happy Feet Website
+permalink: /:categories/:title

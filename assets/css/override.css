@@ -1,0 +1,28 @@
+/*
+ * Temporary CSS file to override CSS rules while developing
+ */
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+figcaption {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ededed;
+  font-size: smaller;
+  text-align: center;
+}
+
+#post-sections section {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.image img {
+  border-radius: 0;
+}
+
+.wrapper.wrapper-inner.style1 > .inner {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

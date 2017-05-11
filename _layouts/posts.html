@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<!--
+<h2>All Posts</h2>
+
+{% for category in site.categories %}
+  <h3>{{ category | first }}</h3>
+  <ul>
+    {% for posts in category %}
+      {% for post in posts %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+
+<hr>
+<ul>
+{% for post in site.categories.[page.category] %}
+  <li>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt }}</p>
+    <p><a href="{{ site.baseurl }}{{ post.url }}">Read on</a></p>
+  </li>
+{% endfor %}
+</ul>
+-->
+
+{% assign cat = page.category %}
+
+<div id="post-sections">
+{% for post in site.categories.[cat] %}
+<section class="spotlight style1 content-align-left image-position-center {% cycle 'orient-right', 'orient-left' %}">
+  <div class="content">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    <ul class="actions vertical">
+      <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read on</a></li>
+    </ul>
+  </div>
+  <div class="image">
+    <img src="{{ post.image }}" alt="{{ post.title }}">
+  </div>
+</section>
+{% endfor %}
+</div>

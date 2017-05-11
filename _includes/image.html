@@ -1,0 +1,7 @@
+{% capture img_path %}{{ include.loc }}{% endcapture %}
+<figure>
+  <span class="image fit">
+    <img src="{{ img_path }}" alt="{{ include.caption }}" />
+    <figcaption>{{ include.caption }}</figcaption>
+    </span>
+</figure>
