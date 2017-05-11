@@ -1,7 +1,7 @@
 {% capture img_path %}{{ include.loc }}{% endcapture %}
 <figure>
   <span class="image fit">
-    <img src="{{ img_path }}" alt="{{ include.caption }}" />
+    <img data-src="{{ img_path }}" alt="{{ include.caption }}" class="lazyload" />
     <figcaption>{{ include.caption }}</figcaption>
     </span>
 </figure>
