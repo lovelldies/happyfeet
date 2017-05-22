@@ -8,10 +8,6 @@ name: The Happy Feet Website
 permalink: /:categories/:title
 livesiteurl: http://happtfeet.us
 
-# Instagram plugin
-instagram_cache: false # or true
-instagram_cache_dir: '.instagram-cache' # default '.instagram-cache'
-
 # Authors of the website.
 lovell:
   name: Lovell D'souza
