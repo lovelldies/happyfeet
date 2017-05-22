@@ -1,0 +1,20 @@
+{% if page.tags.size > 0 %}
+  {% assign tagslist = page.tags %}
+  <section id="tags" class="wrapper style1 align-left">
+    <div class="inner">
+    <div class="index align-left">
+    <section>
+      <header>
+        <h3>Tags</h3>
+      </header>
+      <div class="content">
+        <p>
+        {% for tag in tagslist %}
+          <a href="{{ site.baseurl }}/{{ tag }}/">{{ tag }}</a>, 
+        {% endfor %}
+        </p>
+      </div>
+    </section>
+    </div>
+  </section>
+{% endif %}

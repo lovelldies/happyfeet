@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<div id="post-sections">
+{% include latestpost.html %}
+
+<div id="featured-categories" class="post-sections">
 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
   <div class="content">
     <h2>Russia</h2>
@@ -12,7 +14,7 @@ layout: default
     </ul>
   </div>
   <div class="image">
-    <img src="http://happyfeet.us/wp-content/uploads/2016/10/church-savior-spilled-blood.jpg" alt="">
+    <img src="https://c2.staticflickr.com/8/7578/30233782991_fb078dafe0_b.jpg" alt="Photo stories from Russia">
   </div>
 </section>
 
@@ -25,7 +27,18 @@ layout: default
     </ul>
   </div>
   <div class="image">
-    <img src="https://c2.staticflickr.com/4/3885/14738590494_20a2a6b137_h.jpg" alt="">
+    <img src="https://c2.staticflickr.com/4/3885/14738590494_20a2a6b137_h.jpg" alt="Photo stories from Goa">
   </div>
 </section>
 </div>
+
+<section class="wrapper style1 align-center">
+  <div class="inner">
+    <h2>Hello There!</h2>
+    <p class="major">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+    <a href="#" class="button">Button</a>
+  </div>
+</section>
+
+{% include sitemap.html %}

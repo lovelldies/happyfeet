@@ -6,3 +6,20 @@ exclude: ['README.md']
 markdown: redcarpet
 name: The Happy Feet Website
 permalink: /:categories/:title
+livesiteurl: http://happtfeet.us
+
+# Instagram plugin
+instagram_cache: false # or true
+instagram_cache_dir: '.instagram-cache' # default '.instagram-cache'
+
+# Authors of the website.
+lovell:
+  name: Lovell D'souza
+  email: lovelldies@gmail.com
+  web: http://www.lovelldsouza.com
+  image: https://c2.staticflickr.com/6/5465/buddyicons/20144186@N04_r.jpg
+priya:
+  name: Priya Ramachandran
+  email: priya29ramachandran@gmail.com
+  web: http://priyaramachandran.com
+  image: https://c2.staticflickr.com/8/7568/29440344254_5752503667_q.jpg

@@ -1,7 +1,15 @@
 {% capture img_path %}{{ include.loc }}{% endcapture %}
+{% capture img_alt %}{{ include.alt }}{% endcapture %}
+
+{% if include.caption != null %}
+  {% capture img_caption %}{{ include.caption }}{% endcapture %}
+{% else %}
+  {% capture img_caption %}{{ include.alt }}{% endcapture %}
+{% endif %}
+
 <figure>
   <span class="image fit">
-    <img data-src="{{ img_path }}" alt="{{ include.caption }}" class="lazyload" />
-    <figcaption>{{ include.caption }}</figcaption>
-    </span>
+    <img data-src="{{ img_path }}" alt="{{ img_alt }}" title="{{ img_alt }}" class="lazyload" />
+    <figcaption>{{ img_caption }}</figcaption>
+  </span>
 </figure>

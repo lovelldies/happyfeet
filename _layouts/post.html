@@ -2,12 +2,28 @@
 layout: default
 ---
 
+{% assign cat = page.categories[0] %}
+{% assign author = page.author %}
+
 <span class="image fit">
-  <img src="{{ page.image }}" alt="{{ page.title }}">
+  <img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
 </span>
 
 <section class="wrapper style1 align-left">
   <div class="inner">
+    <postmeta>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        <i class="fa fa-clock-o"></i> {{ page.date | date: '%B %d, %Y' }}
+      </time> <br>
+      Posted in <category>
+        <a href="{{ site.baseurl }}/{{ cat }}/" title="Category">
+          {{ cat | capitalize }}</a>
+      </category> by
+      <author>
+        <a href="{{ site.baseurl }}/author/{{ author }}/" title="Author">
+          {{ site[author].name }}</a>.
+      </author>
+    </postmeta>
     <h1>{{ page.title }}</h1>
     {% if page.blockquote %}
       <blockquote>{{ page.blockquote }}</blockquote>
@@ -20,3 +36,9 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+{% include social-links.html %}
+{% include comments.html %}
+{% include tags.html %}
+{% include related-posts.html %}
+{% include sitemap.html %}

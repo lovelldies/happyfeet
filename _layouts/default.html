@@ -5,7 +5,7 @@
   <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon.png" >
 
   {% if page.title %}
-    <title>{{ page.title }} | Happy Feet!</title>
+    <title>{{ page.title }} &middot; Happy Feet!</title>
   {% else %}
     <title>Happy Feet! Stories, photographs and thoughts from a travelling couple.</title>
   {% endif %}
@@ -15,21 +15,13 @@
   <link href="{{ site.baseurl }}/assets/css/override.css" rel="stylesheet">
 </head>
 <body class="">
-<div id="wrapper" class="container-fluid">
 
-  <section class="banner onload-image-fade-in onload-content-fade-in style5 fullscreen content-align-center image-position-center invert">
-    <div class="content">
-      <h1>Happy Feet!</h1>
-      <p class="major">Stories, photographs and thoughts from a travelling couple taking walks and mapping their routes, while backpacking around India, and parts of the world.</p>
-      {% include nav.html %}
-      <ul class="actions vertical">
-        <li><a href="#first" class="button big wide smooth-scroll-middle">Cute. Show me more</a></li>
-      </ul>
-    </div>
-    <div class="image">
-      <img src="http://happyfeet.us/wp-content/uploads/2015/03/evenings-old-goa.jpg" alt="">
-    </div>
-  </section>
+<div id="wrapper" class="container-fluid">
+  {% include banner-nav.html %}
+  
+  <a href="javascript:void(0);" id="logo">
+    <img src="http://happyfeet.us/wp-content/uploads/2016/08/favicon.png" />
+  </a>
 
   {{ content }}
 
@@ -40,6 +32,7 @@
   <script src="{{ site.baseurl }}/assets/js/util.js"></script>
   <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   <script src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/common.js"></script>
 </div>
 </body>
 </html>
