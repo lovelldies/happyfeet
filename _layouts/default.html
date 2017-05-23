@@ -35,9 +35,12 @@
 
   {% if page.image %}
     <meta property="og:image:secure_url" content="{{ page.image }}" />
+    <meta property="og:image" content="{{ page.image | remove: 'https://' }}" />
+
     <meta name="twitter:image" content="{{ page.image }}" />
   {% else %}
     <meta property="og:image:secure_url" content="{{ site.image }}" />
+    <meta property="og:image" content="{{ site.image | remove: 'https://' }}" />
     <meta name="twitter:image" content="{{ site.image }}" />
   {% endif %}
 
