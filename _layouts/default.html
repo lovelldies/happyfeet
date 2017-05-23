@@ -51,7 +51,7 @@
     {% endfor %}
   {% endif %}
   {% if page.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+    <meta content="{{ site.baseurl }}{{ page.url }}" property="og:url" />
   {% endif %}
 
   <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon.png" >
