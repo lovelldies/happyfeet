@@ -2,8 +2,7 @@
 layout: default
 ---
 
-{% assign cat = page.categories[0] %}
-{% assign author = page.author %}
+{% assign cat = page.categories limit:1 %}
 
 <span class="image fit">
   <img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
@@ -17,7 +16,7 @@ layout: default
       </time> <br>
       Posted in <category>
         <a href="{{ site.baseurl }}/{{ cat }}/" title="Category">
-          {{ cat | capitalize }}</a>
+          {{ cat }}</a>
       </category> by
       <author>
         <a href="{{ site.baseurl }}/author/{{ author }}/" title="Author">
