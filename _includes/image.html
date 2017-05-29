@@ -7,9 +7,16 @@
   {% capture img_caption %}{{ include.alt }}{% endcapture %}
 {% endif %}
 
+{% if include.srcset != null %}
+  {% assign data_src = include.srcset %}
+{% else %}
+  {% assign data_src = include.loc %}
+{% endif %}
+
 <figure>
   <span class="image fit">
-    <img data-src="{{ img_path }}" alt="{{ img_alt }}" title="{{ img_alt }}" class="lazyload" />
+    <img src="{{ site.preloadimage }}" alt="{{ img_alt }}" title="{{ img_alt }}" class="lazyload" 
+         data-srcset="{{ data_src }}"/>
     <figcaption>{{ img_caption }}</figcaption>
   </span>
 </figure>

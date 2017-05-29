@@ -6,6 +6,13 @@ layout: default
 
 <div class="post-sections">
 {% for post in site.categories[cat] %}
+
+{% if post.image.srcset %}
+  {% assign data_src = post.image.srcset %}
+{% else %}
+  {% assign data_src = post.image %}
+{% endif %}
+
 <section class="spotlight style1 content-align-left image-position-center {% cycle 'orient-right', 'orient-left' %}">
   <div class="content">
     <h2>{{ post.title }}</h2>
@@ -20,7 +27,7 @@ layout: default
   </div>
   <div class="image">
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <img data-src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}" class="lazyload">
+      <img src="{{ site.preloadimage }}" data-srcset="{{ data_src }}" alt="{{ post.title }}" title="{{ post.title }}" class="lazyload">
     </a>
   </div>
 </section>
