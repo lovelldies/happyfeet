@@ -5,17 +5,19 @@ layout: default
 {% assign cat = page.categories limit:1 %}
 {% assign author = page.author %}
 
-{% if page.image.srcset %}
-  {% assign data_src = page.image.srcset %}
+{% if page.image.datasrcset %}
+  {% assign src = page.image.main %}
+  {% assign data_srcset = page.image.datasrcset %}
 {% else %}
-  {% assign data_src = page.image %}
+  {% assign src = page.image %}
+  {% assign data_srcset = page.image %}
 {% endif %}
 
 <span class="image fit">
   <img class="lazyload" alt="{{ page.title }}" title="{{ page.title }}"
-       data-sizes="auto"
-       src="{{ site.preloadimage }}"
-       data-srcset="{{ data_src }}" />
+       srcset="{{ site.preloadimage }}" data-sizes="auto"
+       src="{{ src }}"
+       data-srcset="{{ data_srcset }}" >
 </span>
 
 <section class="wrapper style1 align-left">

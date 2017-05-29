@@ -1,10 +1,12 @@
 {% assign post = site.posts.first %}
 {% assign content = post.content %}
 
-{% if post.image.srcset %}
-  {% assign data_src = post.image.srcset %}
+{% if post.image.datasrcset %}
+  {% assign src = post.image.main %}
+  {% assign data_srcset = post.image.datasrcset %}
 {% else %}
-  {% assign data_src = post.image %}
+  {% assign src = post.image %}
+  {% assign data_srcset = post.image %}
 {% endif %}
 
 <section id="first" class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
@@ -19,8 +21,9 @@
     </ul>
   </div>
   <div class="image">
-    <img class="lazyload" datasizes="auto" alt="{{ post.title }}"
-         src="{{ site.preloadimage }}"
-         data-srcset="{{ data_src }}" />
+    <img class="lazyload" alt="{{ page.title }}" title="{{ page.title }}"
+         srcset="{{ site.preloadimage }}" data-sizes="auto"
+         src="{{ src }}"
+         data-srcset="{{ data_srcset }}" >
   </div>
 </section>
