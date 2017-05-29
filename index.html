@@ -14,7 +14,10 @@ layout: default
     </ul>
   </div>
   <div class="image">
-    <img src="https://c2.staticflickr.com/8/7578/30233782991_fb078dafe0_b.jpg" alt="Photo stories from Russia">
+    <img class="lazyload" data-sizes="auto" alt="Photo stories from Russia"
+         src="{{ site.preloadimage }}"
+         data-srcset="https://farm8.staticflickr.com/7578/30233782991_fb078dafe0.jpg 500w,
+                      https://farm8.staticflickr.com/7578/30233782991_fb078dafe0_b.jpg 1024w" />
   </div>
 </section>
 
@@ -27,7 +30,11 @@ layout: default
     </ul>
   </div>
   <div class="image">
-    <img src="https://c2.staticflickr.com/4/3885/14738590494_20a2a6b137_h.jpg" alt="Photo stories from Goa">
+    <img class="lazyload" alt="Photo stories from Goa" 
+         src="{{ site.preloadimage }}"
+         data-srcset="https://farm4.staticflickr.com/3885/14738590494_8ca7d4a446_n.jpg 320w,
+                      https://farm4.staticflickr.com/3885/14738590494_8ca7d4a446.jpg 500w,
+                      https://farm4.staticflickr.com/3885/14738590494_8ca7d4a446_b.jpg 1024w" />
   </div>
 </section>
 </div>

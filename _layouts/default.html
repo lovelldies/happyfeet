@@ -33,11 +33,10 @@
     <meta property="og:description" content="{{ site.description }}" />
   {% endif %}
 
-  {% if page.image %}
-    <meta property="og:image:secure_url" content="{{ page.image }}" />
-    <meta property="og:image" content="{{ page.image | replace: 'https://', 'http://' }}" />
-
-    <meta name="twitter:image" content="{{ page.image }}" />
+  {% if page.image['main'] %}
+    <meta property="og:image:secure_url" content="{{ page.image['main'] }}" />
+    <meta property="og:image" content="{{ page.image['main'] | replace: 'https://', 'http://' }}" />
+    <meta name="twitter:image" content="{{ page.image['main'] }}" />
   {% else %}
     <meta property="og:image:secure_url" content="{{ site.image }}" />
     <meta property="og:image" content="{{ site.image | replace: 'https://', 'http://' }}" />
