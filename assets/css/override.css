@@ -101,6 +101,10 @@ postmeta {
   display: inline;
 }
 
+ul.icons li {
+  padding: 0.5rem;
+}
+
 .unported-images img {
   margin-top: 2rem;
   width: 100%;
@@ -108,7 +112,6 @@ postmeta {
 
 .unported-images .wp-caption-text {
   margin: 0;
-  background-color: grey;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ededed;
   font-size: smaller;
@@ -121,6 +124,10 @@ postmeta {
 
 small {
   font-size: smaller;
+}
+
+#tagpage-tagposts p, #tags p  {
+  margin: 0;
 }
 
 .yt-container {

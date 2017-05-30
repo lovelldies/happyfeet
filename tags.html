@@ -1,0 +1,63 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+<div id="post-sections">
+<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+  <div class="content">
+    <h1>Tags</h1>
+    <p class="major">Here are all the tags we&apos;ve used on our posts.</p>
+    <p>All the tags are hyperlinked to the their respective posts. Just click around. Everything is pretty obvious.</p>
+  </div>
+  <div class="image">
+    <img class="lazyload" alt="Priya, tying her laces in Mongolia." title="Priya, tying her laces in Mongolia."
+         srcset="{{ site.preloadimage }}" data-sizes="auto"
+         src="https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e.jpg"
+         data-srcset="https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_b.jpg 1024w, https://farm6.staticflickr.com/5773/31306997811_18af7fea99_h.jpg 1600w" />
+  </div>
+</section>
+
+<section class="spotlight style1" id="tagpage-taglist">
+  <div class="content">
+    {% assign rawtags = "" %}
+    {% for post in site.posts %}
+      {% assign ttags = post.tags | join:'|' | append:'|' %}
+      {% assign rawtags = rawtags | append:ttags %}
+    {% endfor %}
+    {% assign rawtags = rawtags | split:'|' | sort %}
+
+    {% assign tags = "" %}
+    {% for tag in rawtags %}
+      {% if tag != "" %}
+        {% if tags == "" %}
+          {% assign tags = tag | split:'|' %}
+        {% endif %}
+        {% unless tags contains tag %}
+          {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+
+    <h2>A wall full of tags!</h2>
+    {% for tag in tags %}
+      <a href="#{{ tag | slugify }}">{{ tag }}</a>, 
+    {% endfor %}
+  </div>
+</section>
+
+<section class="spotlight style1 grey-bg">
+  <div class="content" id="tagpage-tagposts">
+    {% for tag in tags %}
+    <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+      <ul>
+      {% for post in site.posts %}
+      {% if post.tags contains tag %}
+        <li><p><a href="{{ post.url }}">{{ post.title }}</a> &middot; <small>{{ post.date | date_to_string }}</small></p></li>
+       {% endif %}
+     {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</section>

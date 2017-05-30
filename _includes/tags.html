@@ -10,7 +10,7 @@
       <div class="content">
         <p>
         {% for tag in tagslist %}
-          <a href="{{ site.baseurl }}/{{ tag }}/">{{ tag }}</a>, 
+          <a href="{{ site.baseurl }}/tags/#{{ tag | downcase | slugify }}">{{ tag }}</a>, 
         {% endfor %}
         </p>
       </div>
