@@ -12,6 +12,10 @@ a:hover {
   font-weight: initial;
 }
 
+#allposts li {
+  list-style: none;
+}
+
 #banner-nav {
   padding: 2rem 3rem 1rem 3rem;
   background-color: #000;
@@ -64,6 +68,10 @@ figcaption {
   position: fixed;
   top: 0;
   z-index: 1000;
+}
+
+#logo img {
+  width: 2.5rem;
 }
 
 p {

@@ -6,7 +6,8 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:locale" content="en_GB" />
-  <meta property="fb:app_id" content="220168524773983" /> 
+  <meta property="fb:app_id" content="220168524773983" />
+  <meta property="article:publisher" content="https://happyfeet.us/" />
 
   {% if page.author %}
     {% assign author = page.author %}
@@ -69,11 +70,12 @@
   {% include banner-nav.html %}
   
   <a href="javascript:void(0);" id="logo">
-    <img src="http://happyfeet.us/wp-content/uploads/2016/08/favicon.png" />
+    <img src="{{ site.baseurl }}/assets/img/favicon.png" />
   </a>
 
   {{ content }}
 
+  {% include footer.html %}
   <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/jquery.scrollex.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/jquery.scrolly.min.js"></script>
