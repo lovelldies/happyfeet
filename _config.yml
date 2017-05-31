@@ -9,7 +9,7 @@ markdown: redcarpet
 name: The Happy Feet Website
 permalink: /:categories/:title
 preloadimage: https://c2.staticflickr.com/2/1534/26331374112_75a1493be3.jpg
-livesiteurl: http://happtfeet.us
+livesiteurl: http://happyfeet.us
 
 # Authors of the website.
 lovell:
