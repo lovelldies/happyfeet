@@ -9,16 +9,16 @@ markdown: redcarpet
 name: The Happy Feet Website
 permalink: /:categories/:title
 preloadimage: https://c2.staticflickr.com/2/1534/26331374112_75a1493be3.jpg
-livesiteurl: http://happyfeet.us
+livesiteurl: https://happyfeet.us
 
 # Authors of the website.
 lovell:
   name: Lovell D&#x27;souza
   email: lovelldies@gmail.com
-  web: http://www.lovelldsouza.com
+  web: https://www.lovelldsouza.com
   image: https://c2.staticflickr.com/6/5465/buddyicons/20144186@N04_r.jpg
 priya:
   name: Priya Ramachandran
   email: priya29ramachandran@gmail.com
-  web: http://priyaramachandran.com
+  web: https://priyaramachandran.com
   image: https://c2.staticflickr.com/8/7568/29440344254_5752503667_q.jpg
