@@ -82,12 +82,12 @@ postmeta {
   font-size: 0.8rem;
 }
 
-#tags, #social-links, #sitemap{
+#tags, #social-links, #sitemap {
   border-top: 1px solid #f0f0f0;
   background-color: #f9f9f9;
 }
 
-#comments {
+#comments, #footer {
   border-top: 1px solid #f0f0f0;
 }
 
