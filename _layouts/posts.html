@@ -24,11 +24,11 @@ layout: default
          {{ post.excerpt }}</p>
        {% endif %}
     <ul class="actions vertical">
-      <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read on</a></li>
+      <li><a href="{{ post.url }}" class="button">Read on</a></li>
     </ul>
   </div>
   <div class="image">
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ post.url }}">
       <img class="lazyload" alt="{{ post.title }}" title="{{ post.title }}"
            srcset="{{ site.preloadimage }}" data-sizes="auto"
            src="{{ src }}"
