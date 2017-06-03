@@ -32,10 +32,10 @@ layout: default
         <i class="fa fa-clock-o"></i> {{ page.date | date: '%B %d, %Y' }}
       </time> <br>
       Posted in <category>
-        <a href="{{ site.baseurl }}{{ cat }}/" title="Category">{{ catname }}</a>
+        <a href="/{{ cat }}/" title="Category">{{ catname }}</a>
       </category> by
       <author>
-        <a href="{{ site.baseurl }}authors/#{{ author }}/" title="Author">{{ site[author].name }}</a>.
+        <a href="/authors/#{{ author }}/" title="Author">{{ site[author].name }}</a>.
       </author>
     </postmeta>
     <h1>{{ page.title }}</h1>

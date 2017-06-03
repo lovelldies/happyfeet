@@ -1,4 +1,6 @@
+.DS_Store
 .firebaserc
+.jekyll-metadata
 _site
 delete
 helper
@@ -8,3 +10,4 @@ firebase-debug.log
 phpinfo.php
 resources.txt
 sublime.sublime-project
+Thumbs.db
