@@ -1,8 +1,10 @@
+.firebaserc
 _site
-resources.txt
-sublime.sublime-project
 delete
+helper
 imagefetcher.php
 imagefetcher2.php
+firebase-debug.log
 phpinfo.php
-helper
+resources.txt
+sublime.sublime-project
