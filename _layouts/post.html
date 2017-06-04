@@ -50,7 +50,9 @@ layout: default
 {{ content }}
 
 {% include social-links.html %}
-{% include comments.html %}
+{% if page.comments %}
+  {% include comments.html %}
+{% endif %}
 {% include tags.html %}
 {% include related-posts.html %}
 {% include sitemap.html %}
