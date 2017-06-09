@@ -18,7 +18,7 @@
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="{{ page.date }}T00:00:00+00:00" />
+    <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}T00:00:00+05:30" />
     <meta property="article:author" content="{{ site[author].fb }}" />
   {% else %}
     <title>{{ site.title }}</title>
