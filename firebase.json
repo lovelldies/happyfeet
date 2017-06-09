@@ -4,6 +4,15 @@
     "ignore": [
       "firebase.json"
     ],
+    "redirects": [ {
+      "source": "/tag/*",
+      "destination": "/tags/",
+      "type" : 302
+    }, {
+      "source": "/tag",
+      "destination": "/tags/",
+      "type": 301
+    } ],
     "cleanUrls": true,
     "trailingSlash": false
   }
