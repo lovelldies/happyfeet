@@ -1,0 +1,42 @@
+---
+layout: post
+comments: true
+author: lovell
+categories: thoughts
+
+title: The All New Happy Feet Website
+excerpt: Faster, better, secure, and moving from WordPress to Jekyll.
+long_excerpt: Over the past few year, I had become a huge fan of WordPress. A few click click booms and your website was up and running. Install a theme, tweak it to your liking, add a few plugins, and you are ready to launch in a few hours. Now all this is cute, but with WordPress comes a lot of vulnerabilities and also the fact that there is a lot of unnecessary code that is generated that you would never land up using. Enter Jekyll.
+
+image: https://c2.staticflickr.com/2/1658/25690063632_e6ae6ef8cf_h.jpg
+
+blockquote: Over the past few year, I had become a huge fan of WordPress. A few click click booms and your website was up and running. Install a theme, tweak it to your liking, add a few plugins, and you are ready to launch in a few hours. Now all this is cute, but with WordPress comes a lot of vulnerabilities and also the fact that there is a lot of unnecessary code that is generated that you would never land up using. Enter Jekyll.
+
+tags: [ WordPress, Jekyll, Happy Feet, Website, Migration, Firebase, Hosting, Page Speed, Speed, UI, UX, User Interface, User Experience, ]
+---
+<section class="wrapper wrapper-inner style1 align-left">
+  <div class="inner">
+    <h2>A little talk about Jekyll</h2>
+    <p>The only reason I landed up looking into <a href="https://jekyllrb.com/" title="Official Jekyll Website" target="_blank">Jekyll</a> (a static website generator) was because I finally started using <a href="https://github.com/lovelldies" title="Lovell on Github" target="_blank">Github</a> to backup and version control my code. The more I learned about Jekyll, the more iteresting it sounded, and there was no going back. Between the multiple cups of coffee/tea that were consumed, and the multiple hours I landed up ignoring the missus, the migration of this website too place.</p>
+    <p>For those of you who are interested in reading and learning about Jekyll, the documentation on the official <a href="https://jekyllrb.com/" title="Official Jekyll Website" target="_blank">Jekyll website</a> is a great place to start, along with these <a herf="https://www.youtube.com/playlist?list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-" title="Learn Jekyll on YouTube" target="_blank">really simple videos</a> on YouTube, by <a href="https://thomasjbradley.ca/" title="Thomas Bradley's Website">Thomas Bradley</a>.</p>
+
+    <h2>Issues with WordPress</h2>
+    <p>Although I would still recommend <a href="https://wordpress.com/" title="The WordPress Website" target="_blank">WordPress</a> to folks wanting to have a website/blog running in a few minutes, it wasn't doing the job for us. Even though we did not publish a lot of posts over the past couple of years, our website had grown to having <a href="/all/" target="_blank" title="All Post on Happy Feet">around 150 posts</a> over these few years. Which meant it was starting to blow up even though most of our photographs were hosted on <a href="https://www.flickr.com/photos/lovelldies/albums" target="_blank" title="Lovell's Flickr">my Flickr account</a>. Now, no doubt some of the post header images are hosted on the website itself, the size of the WordPress website files (excluding the images hosted on Flickr and the MySql database), after being zipped up, amounted to 520 MB. Now compare that to the Jekyll files, (after zipped) amounting to just a little over 1MB. That&apos;s a <strong>huge</strong> amount of data saved.</p>
+    <p>Another problem was that WordPress was painstakingly slow, even after removing a ton of plugins, optimizing the code, serving images from a different host, and a lot of caching. What did not help was that the website was also hosted on a shared host. But even after accounting for that, the website was really slow. Period.</p>
+    <p>WordPress was also prone to a lot of spamming and hijacking attacks, which luckily we were able to fence off, but a recent <a href="https://www.polaris64.net/blog/cyber-security/2017/wordpress-hacks-jquery-js-script-injection" target="_blank">JavaScript code injection</a> was the icing on the cake. Luckily, I had already moved the website by then, but the backup on the shared host was infected, along with a bunch of other websites.</p>
+    <p>The bottom line was WordPress was not cutting it for us anymore and not serving our workflow. I upload the photos to my Flickr account. The <a href="http://priyaramachandran.com">missus</a> anyway writes all her posts on <a href="https://www.google.com/docs/about/" target="_blank" title="Google Docs">Google Docs</a>, which I paste into the WordPress editor. We then copy the image code from a script that I wrote, and then paste the code in the places required. So, along with a ton of other reasons that I&apos;ve not bothered to touch, WordPress was not of any great use anymore.</p>
+
+    <h2>Plain Text Website</h2>
+    <p>Our entire website now is just plain text. All the photographs are hosted on Flickr (besides the logo and the image loading gif). The best part of this is that I can pull the website source code from Github really quickly, even on some painstakingly slow internet connections in India. The other benefit of having the photos on Flickr is that we don&apos;t have to fill in the image titles, alt tags and caption in our posts, as these get pulled directly from Flickr, via the Flickr API. This not only leaves our photos well documented on Flickr, but also cuts down on a ton of time while making our posts.</p>
+
+    <h2>Dynamic image sizes &amp; lazy loading</h2>
+    <p>Inorder to provide a better user experience, we now serve images based on the user&apos;s device screen size. No point sending a 2048 pixel wide image if the user&apos;s screen is only around 400 pixels wide. Here is where Flickr comes to the rescue once again.</p>
+    <p>Luckily photographs hosted on Flickr are automatically resized and made available to the user. The various sizes can be explored here: <a href="https://www.flickr.com/services/api/flickr.photos.getSizes.html" target="_blank">flickr.photos.getSizes API Docs</a>. These sizes along with <a href="https://github.com/aFarkas/lazysizes" target="_blank" title="lazysizes on Github">lazysizes</a> by <a href="https://github.com/aFarkas" target="_blank" title="Alexander Farkas on Github">Alexander Farkas</a> gets the job done for us.</p>
+
+    
+
+  </div>
+</section>
+
+
+
