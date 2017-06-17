@@ -8,7 +8,7 @@ exclude: ['README.md']
 markdown: redcarpet
 name: The Happy Feet Website
 permalink: /:categories/:title
-preloadimage: /assets/img/loading.gif
+preloadimage: https://happyfeet.us/assets/img/loading.gif
 livesiteurl: https://happyfeet.us
 
 # Authors of the website.

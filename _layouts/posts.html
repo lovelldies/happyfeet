@@ -1,6 +1,21 @@
 ---
 layout: default
 ---
+{% if page.sectiontitle %}
+<section id="section-header" class="banner style5 fullscreen content-align-center image-position-center invert">
+  <div class="content">
+    <h1>{{ page.sectiontitle }}</h1>
+    <p class="major">{{ page.sectionexcerpt }}</p>
+    <ul class="actions vertical">
+      <li><a href="#first" class="button big wide smooth-scroll-middle icon fa-bicycle">Explore</a></li>
+    </ul>
+  </div>
+ 
+  <div class="image">
+    <img class="lazyload" alt="{{ page.sectiontitle }}" title="{{ page.sectiontitle }}" srcset="{{ site.preloadimage }}" data-sizes="auto" src="{{ page.sectionimage.main }}" data-srcset="{{ page.sectionimage.datasrcset }}" >
+  </div>
+</section>
+{% endif %}
 
 {% assign cat = page.category %}
 
@@ -15,20 +30,20 @@ layout: default
   {% assign data_srcset = post.image %}
 {% endif %}
 
-<section class="spotlight style1 content-align-left image-position-center {% cycle 'orient-right', 'orient-left' %}">
+<section id="first" class="spotlight style1 content-align-left image-position-center {% cycle 'orient-right', 'orient-left' %}">
   <div class="content">
-    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+    <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
     <p>{% if post.long_excerpt != null %}
          {{ post.long_excerpt }}
        {% else %}
          {{ post.excerpt }}</p>
        {% endif %}
     <ul class="actions vertical">
-      <li><a href="{{ post.url }}" class="button">Read on</a></li>
+      <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read on</a></li>
     </ul>
   </div>
   <div class="image">
-    <a href="{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
       <img class="lazyload" alt="{{ post.title }}" title="{{ post.title }}"
            srcset="{{ site.preloadimage }}" data-sizes="auto"
            src="{{ src }}"

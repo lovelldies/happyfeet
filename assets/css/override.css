@@ -135,6 +135,12 @@ ul.icons li {
   margin-bottom: 0;
 }
 
+#section-header h1,
+#section-header p,
+#section-header a {
+  text-shadow: 1px 2px 2px #000;
+}
+
 small {
   font-size: smaller;
 }
