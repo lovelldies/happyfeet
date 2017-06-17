@@ -17,7 +17,7 @@ layout: default
 
 <section class="spotlight style1 content-align-left image-position-center {% cycle 'orient-right', 'orient-left' %}">
   <div class="content">
-    <h2>{{ post.title }}</h2>
+    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
     <p>{% if post.long_excerpt != null %}
          {{ post.long_excerpt }}
        {% else %}

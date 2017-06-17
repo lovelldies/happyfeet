@@ -50,8 +50,10 @@ layout: default
 {{ content }}
 
 {% include social-links.html %}
-{% if page.comments %}
-  {% include comments.html %}
+{% if page.poststatus != 'draft' %}
+  {% if page.comments %}
+    {% include comments.html %}
+  {% endif %}
 {% endif %}
 {% include tags.html %}
 {% include related-posts.html %}

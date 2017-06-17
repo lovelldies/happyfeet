@@ -71,7 +71,9 @@
 
 </head>
 <body class="">
-{% include google-analytics.html %}
+{% if page.poststatus != 'draft' %}
+  {% include google-analytics.html %}
+{% endif %}
 <div id="wrapper" class="container-fluid">
   {% include banner-nav.html %}
   
@@ -90,9 +92,13 @@
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/lazysizes.min.js"></script>
   <script src="/assets/js/common.js"></script>
-  {% if page.comments %}
-  <script id="dsq-count-scr" src="//happyfeetus.disqus.com/count.js" async></script>
+  
+  {% if page.poststatus != 'draft' %}
+    {% if page.comments %}
+      <script id="dsq-count-scr" src="//happyfeetus.disqus.com/count.js" async></script>
+    {% endif %}
   {% endif %}
+
 </div>
 </body>
 </html>

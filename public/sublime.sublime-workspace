@@ -1,0 +1,635 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"Cat",
+				"category"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"hea",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_posts/big-picture/2015-03-19-evening-golkonda-hyderabad.html",
+			"settings":
+			{
+				"buffer_size": 1674,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/thoughts/2013-09-26-before-me-there-was-infinity.html",
+			"settings":
+			{
+				"buffer_size": 1666,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "---\nlayout: post\nauthor: lovell_OR_priya_IN_SMALL_CHARACTERS\ncategories: [ cat1, cat2 ]\n\ntitle: TITLE_GOES_HERE\nexcerpt: EXCERPT_TO_BE_SEO_FRIENDLY\nlong_excerpt: THIS_SHOWS_UP_A_POST_DESCRIPTIONS\n\nimage: FLICKR_LINK\n\nblockquote: BLOCKQUOTE_TEXT_GOES_HERE\n\ntags: [ tag, tag, tag ]\n\ngeo:\n\n\ndsq_thread_id: \n---\n\n<section class=\"wrapper wrapper-inner style1 align-left\">\n  <div class=\"inner\">\n\n    {% include image.html\n       loc = 'xxxxx'\n       alt = 'xxxxxxxxxx'\n       caption = 'xxxxxxxxxx' %}\n\n    <div class=\"row\">\n      <div class=\"col-md-6\">\n        \n      </div>\n      <div class=\"col-md-6\">\n        \n      </div>\n    </div>\n  </div>\n</section>\n\n<div class=\"row\">\n  <div class=\"col-md-6\">\n    \n  </div>\n  <div class=\"col-md-6\">\n    \n  </div>\n</div>\n\n<center><iframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/XXXXXXXX?rel=0\" frameborder=\"0\" allowfullscreen></iframe></center>",
+			"file": "_posts/starter-template.html",
+			"file_size": 902,
+			"file_write_time": 131398514611985492,
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/lovell/code/happyfeet",
+		"/home/lovell/code/happyfeet/_posts",
+		"/home/lovell/code/happyfeet/_posts/thoughts",
+		"/home/lovell/code/happyfeet/_posts/uttarakhand"
+	],
+	"file_history":
+	[
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-12-29-priya-at-top-station.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-17-where-the-eagles-soar.html",
+		"/home/lovell/code/happyfeet/_posts/goa/2015-03-10-shigmo-ponda-video.html",
+		"/home/lovell/code/happyfeet/_posts/goa/2012-12-23-an-evening-with-the-oldies.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-04-13-bara-gumbad.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-07-18-madhuri-lake-tawang.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-07-12-chai-at-purani-dilli.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-02-11-colors-of-the-himalayas.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-12-14-drama-and-dawn-kanyakumari-sunrise.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-09-18-curious-cat-fort-st-george.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-12-18-bibi-ka-maqbara.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2015-05-05-alien-life-ashwem-beach.html",
+		"/home/lovell/code/happyfeet/_posts/uttarakhand/2015-06-25-trek-to-gangria.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-12-24-alappuzha-backwaters-at-dawn.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-02-08-capturing-the-light-in-the-darkness.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-12-09-where-the-adventure-never-ends.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-11-02-diwali-cityscape-hyderabad.html",
+		"/home/lovell/code/happyfeet/resources.txt",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-12-17-priya-at-mattancherry.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-01-20-leaves-and-light.html",
+		"/home/lovell/code/happyfeet/_posts/starter-template.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-11-04-diwali-hussain-sagar.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2015-05-09-monsoon-is-coming.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-18-mighty-sambar.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-03-24-enjoying-the-sunrise.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-07-25-in-life-is-death.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-24-se-cathedral-facade.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-04-01-bath-time-siesta.html",
+		"/home/lovell/code/happyfeet/_posts/on-the-road/2013-11-19-goa-to-kerala.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-03-30-little-girl-at-tosh.html",
+		"/home/lovell/code/happyfeet/assets/css/override.css",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-03-09-jama-masjid-old-delhi.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2014-07-19-women-at-khajuraho.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-25-sunset-varca.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-19-golkonda-dusk.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-19-mumbai-morning-cityscape.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-11-07-starfish-varca-beach.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2015-06-30-dawn-at-sarchu.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-10-14-the-church-of-the-savior-on-spilled-blood.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-23-the-ganga.html",
+		"/home/lovell/code/happyfeet/_posts/on-the-road/2013-11-20-our-fancy-ride-to-cochin.html",
+		"/home/lovell/code/happyfeet/_includes/banner-nav.html",
+		"/home/lovell/code/happyfeet/_includes/sitemap.html",
+		"/home/lovell/code/happyfeet/_posts/big-picture/2013-10-19-horses-on-the-himalayas.html",
+		"/home/lovell/code/happyfeet/on-the-road.html",
+		"/home/lovell/code/happyfeet/_posts/uttarakhand/valley-of-flowers-trek.html",
+		"/home/lovell/code/happyfeet/uttarakhand.html",
+		"/home/lovell/code/happyfeet/_posts/thoughts/2016-04-14-words-wont-let-me-be.html",
+		"/home/lovell/code/happyfeet/_posts/thoughts/2016-06-07-edge-of-the-ocean.html",
+		"/home/lovell/code/happyfeet/_posts/goa/2016-04-21-clouds-in-goa-timelapse.html",
+		"/home/lovell/code/happyfeet/maharashtra.html",
+		"/home/lovell/code/happyfeet/_posts/maharashtra/2016-04-23-hello-mumbai.html",
+		"/home/lovell/code/happyfeet/_layouts/post.html",
+		"/home/lovell/code/happyfeet/_includes/related-posts.html",
+		"/home/lovell/code/happyfeet/_posts/italy/2010-10-25-our-clicheless-venice.html",
+		"/home/lovell/code/happyfeet/_posts/france/2010-10-25-our-clicheless-venice.html",
+		"/home/lovell/code/happyfeet/_layouts/posts.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-10-24-church-of-the-intercession-on-the-nerl.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-08-02-world-largest-swimming-pool-cathedral-christ-saviour.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-07-29-three-months-in-russia.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2017-02-03-bell-tower-church-boris-gleb-kideksha.html",
+		"/home/lovell/code/happyfeet/.gitmodules",
+		"/home/lovell/code/happyfeet/_posts/nepal/2017-02-13-god-light-pame.html",
+		"/home/lovell/code/happyfeet/all.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-08-29-overlooking-oka-volga.html",
+		"/home/lovell/code/happyfeet/_posts/andhra-pradesh/2012-09-29-faith-ganesh-charurthi-hyderabad.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2017-02-14-apparition-christ-people.html",
+		"/home/lovell/code/happyfeet/_posts/andhra-pradesh/2012-06-05-kurnool.html",
+		"/home/lovell/code/happyfeet/jammu-kashmir.html",
+		"/home/lovell/code/happyfeet/_posts/thoughts/2012-06-24-le-livre.html",
+		"/home/lovell/code/happyfeet/_posts/jammu-kashmir/2009-08-31-back-from-stok.html",
+		"/home/lovell/code/happyfeet/italy.html",
+		"/home/lovell/code/happyfeet/andhra-pradesh.html",
+		"/home/lovell/code/happyfeet/_posts/france/2010-10-10-the-old-bookkeeper.html",
+		"/home/lovell/code/happyfeet_/happtfeetlive/_posts (copy)/2010-10-25-our-clicheless-venice.html",
+		"/home/lovell/code/happyfeet/_includes/image.html",
+		"/home/lovell/code/happyfeet_/happtfeetlive/_posts (copy)/2010-10-10-the-old-bookkeeper.html",
+		"/home/lovell/code/happyfeet/.gitignore",
+		"/home/lovell/code/happyfeet/sublime.sublime-project",
+		"/home/lovell/code/websites/speakeasybrownie/assets/css/override.css",
+		"/home/lovell/code/websites/speakeasybrownie/assets/mobirise/css/style.css",
+		"/home/lovell/code/happyfeet/_posts/goa/2009-09-27-pvc-parra-candolim-football.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-09-03-qolsarif-mosque-kazan.html",
+		"/home/lovell/code/happyfeet/_posts/russia/2016-10-29-100-years-of-trans-siberian.html",
+		"/home/lovell/code/happyfeet/index.html",
+		"/home/lovell/code/happyfeet/_layouts/default.html",
+		"/home/lovell/code/happyfeet/big-picture.html",
+		"/home/lovell/code/happyfeet/_posts/goa/2014-07-26-goas-golden-hour-torda.html",
+		"/home/lovell/code/happyfeet/assets/js/common.js",
+		"/home/lovell/code/happyfeet/_includes/latestpost.html",
+		"/home/lovell/code/happyfeet/_includes/nav.html",
+		"/home/lovell/code/happyfeet/_includes/social-links.html",
+		"/home/lovell/code/happyfeet/_includes/tags.html",
+		"/home/lovell/code/happyfeet/_config.yml",
+		"/home/lovell/code/happyfeet/_includes/comments.html",
+		"/home/lovell/code/happyfeet/about.html",
+		"/home/lovell/code/happyfeet/README.md",
+		"/home/lovell/code/happyfeet/_layouts/collections.html",
+		"/home/lovell/code/websites/ninoshka/sublime",
+		"/home/lovell/code/happyfeet/instagram.html",
+		"/home/lovell/code/happyfeet/thoughts.html",
+		"/home/lovell/code/happyfeet/posts.html",
+		"/home/lovell/code/happyfeet/nepal.html",
+		"/home/lovell/code/happyfeet/russia.html",
+		"/home/lovell/code/happyfeet/goa.html",
+		"/home/lovell/code/happyfeet/_posts/nepal/index.html",
+		"/home/lovell/code/happyfeet/assets/css/main.scss",
+		"/home/lovell/code/happyfeet/assets/css/main.css",
+		"/home/lovell/code/happyfeet/_layouts/image.html",
+		"/home/lovell/code/happyfeet/assets/sass/libs/_vars.scss",
+		"/home/lovell/code/happyfeet/assets/sass/components/_image.scss",
+		"/home/lovell/code/happyfeet/_layouts/article.html",
+		"/home/lovell/code/happyfeet/_posts/russia/index.html",
+		"/home/lovell/code/happyfeet_/_posts/2017-02-14-apparition-christ-people.html",
+		"/home/lovell/code/happyfeet/assets/css/common.css",
+		"/home/lovell/code/happyfeet/_posts/2017-02-14-apparition-christ-people.html",
+		"/home/lovell/code/happyfeet/_includes/footer.html",
+		"/home/lovell/code/happyfeet/_site/index.html",
+		"/home/lovell/code/happyfeet/_layouts/page.html",
+		"/home/lovell/code/happyfeet/_includes/head.html",
+		"/home/lovell/code/happyfeet/_posts/index.html",
+		"/home/lovell/code/happyfeet/_includes/header.html",
+		"/home/lovell/code/happyfeet/_pages/01_about.md",
+		"/home/lovell/code/happyfeet/_pages/02_contact.md",
+		"/home/lovell/code/happyfeet/blog/index.html",
+		"/home/lovell/code/myblog/_site/about/index.html",
+		"/home/lovell/code/laravel-test/blog/composer.json"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"..</p>",
+			"</p>",
+			"<div id=\"img[0-9]*\" class=\"wp-caption alignnone\">",
+			"<div id=\"img[0-9]\" class=\"wp-caption alignnone\">",
+			"src=\"farm",
+			".</p></div>",
+			"<div id=\"img[0-9]\" class=\"wp-caption alignnone\">",
+			"http://i[0-9].wp.com/",
+			"?w=1920&#038;ssl=1",
+			" data-recalc-dims=\"1\"",
+			"data-recalc-dims=\"1\"",
+			"?w=1920",
+			"http://i[0-9].wp.com/",
+			"26423719345",
+			"\n   caption = \"\" ",
+			"8038575329",
+			"andhra-pradesh",
+			"https://farm9.staticflickr.com/",
+			"_b",
+			"_h.jpg",
+			"\n   caption = \"\" ",
+			" (Kurnool)\"",
+			".jpg %}",
+			".jpg\" %}",
+			"</p>\n    <h2>",
+			"<p></p>",
+			" \n\n        ",
+			" \n       \n        ",
+			"[hr]",
+			"<img ",
+			"<img alt",
+			"\" loc = \"/",
+			"\" loc = \"\\/",
+			"alt=\"",
+			"jpg\\\" /> .*</p>",
+			"src=\"{{ site.baseurl }}",
+			"class=\" wp-image-.* \" ",
+			"<p>\\[caption id=\\\".*\\\" align=\\\"aligncenter\\\" width=\\\"936\\\"\\]",
+			"<p>\\[caption id=\\\".\\\" align=\\\"aligncenter\\\" width=\\\"936\\\"\\]",
+			"<p>[caption id=\".\" align=\"aligncenter\" width=\"936\"]",
+			"<p>[caption id=\".*\" align=\"aligncenter\" width=\"936\"]",
+			"[/caption]",
+			" width=\"936\" height=\"623\" ",
+			"<p>[hr]</p>",
+			"}}/assets/",
+			"-1024x682",
+			"‘",
+			"’",
+			"“",
+			"”",
+			"’",
+			"msg-box3-d",
+			"msg-box3-d\n\n\n\n",
+			"gallery",
+			"gallery1-9",
+			"soundcloud",
+			"buton",
+			"mbr-butt",
+			"msg-box3-1",
+			"h1 ",
+			"font",
+			"\n       caption = \"\"",
+			"</a></div>",
+			"<div class=\"wedding-img\">",
+			"<div class=\"wedding-img\"><a href=\"",
+			"[caption width=\"1600\" align=\"aligncenter\"]<img src=\"",
+			"’",
+			"f9f9f9",
+			"li><a",
+			"<DESCRIPTION>",
+			"<DOMAIN>",
+			"<TITILE>",
+			"<TITLE>",
+			"<URL>",
+			"</div><div id=\"img[0-9]*\">",
+			"</div><div id=\"img5\">",
+			"(thumbnail image URL)",
+			"(full image URL)",
+			"border-radius",
+			"jpg",
+			"permalink",
+			"\t",
+			"#64abb4",
+			"color6",
+			"color",
+			"color6",
+			"color",
+			"\t"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".</p>",
+			"",
+			"src=\"https://farm",
+			"</p>",
+			"",
+			"https://",
+			" ",
+			"jammu-kashmir",
+			"https://c1.staticflickr.com/9/",
+			"_h",
+			"_b.jpg",
+			" ",
+			"\"",
+			".jpg\" %}",
+			"-1024x682.jpg %}",
+			"</p>\\n\\n\n    <h2>",
+			"",
+			"\\n       ",
+			"       ",
+			"",
+			"{% include image.html \\n\\n\\t\\t",
+			"\"\\n loc = \"/",
+			"\\n\" loc = \"/",
+			"alt = \"",
+			"jpg\" %}",
+			"loc = \"",
+			"",
+			" ",
+			"\\n",
+			"}}/assets/img/postimages/",
+			"",
+			"'",
+			"\"",
+			"'",
+			"gallery",
+			"",
+			"</a>",
+			"",
+			"{% include image.html\n   loc = \"",
+			"'",
+			"<li> &middot; <a",
+			"{{ page.excerpt }}",
+			"{{ site.livesiteurl }}",
+			"{{ page.title }}",
+			"{{ site.livesiteurl }}{{ page.url }}",
+			"\\n\\n",
+			"//farm4.staticflickr.com/3892/14554363489_a15faab5bc_b.jpg",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_posts/big-picture/2015-03-19-evening-golkonda-hyderabad.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1060,
+								1060
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/thoughts/2013-09-26-before-me-there-was-infinity.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								531,
+								531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "_posts/starter-template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.721912486649,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"abou",
+				"resources/views/about.blade.php"
+			],
+			[
+				"v/we",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"rwep",
+				"routes/web.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

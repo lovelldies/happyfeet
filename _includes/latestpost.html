@@ -14,16 +14,18 @@
     <postmeta>
       <time><i class="fa fa-clock-o"></i> Latest Post</time>
     </postmeta>
-    <h2>{{ post.title }}</h2>
+    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
     <p>{{ post.excerpt }}</p>
     <ul class="actions vertical">
       <li><a href="{{ post.url }}" class="button">Read on</a></li>
     </ul>
   </div>
   <div class="image">
-    <img class="lazyload" alt="{{ page.title }}" title="{{ page.title }}"
-         srcset="{{ site.preloadimage }}" data-sizes="auto"
-         src="{{ src }}"
-         data-srcset="{{ data_srcset }}" >
+    <a href="{{ post.url }}" title="{{ page.title }}">
+      <img class="lazyload" alt="{{ page.title }}" title="{{ page.title }}"
+           srcset="{{ site.preloadimage }}" data-sizes="auto"
+           src="{{ src }}"
+           data-srcset="{{ data_srcset }}" />
+    </a>
   </div>
 </section>
