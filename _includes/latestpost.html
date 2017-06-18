@@ -14,14 +14,14 @@
     <postmeta>
       <time><i class="fa fa-clock-o"></i> Latest Post</time>
     </postmeta>
-    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+    <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
     <p>{{ post.excerpt }}</p>
     <ul class="actions vertical">
-      <li><a href="{{ post.url }}" class="button">Read on</a></li>
+      <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read on</a></li>
     </ul>
   </div>
   <div class="image">
-    <a href="{{ post.url }}" title="{{ page.title }}">
+    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ page.title }}">
       <img class="lazyload" alt="{{ page.title }}" title="{{ page.title }}"
            srcset="{{ site.preloadimage }}" data-sizes="auto"
            src="{{ src }}"
