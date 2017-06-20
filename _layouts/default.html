@@ -20,7 +20,7 @@
     <meta property="og:type" content="section" />
   {% else %}
     {% if page.title %}
-      <title>{{ page.title }} &middot; Happy Feet!</title>
+      <title>{{ page.title }} &middot; {{ page.categories[0] | capitalize }} &middot; Happy Feet!</title>
       <meta name="twitter:title" content="{{ page.title }}" />
       <meta property="og:title" content="{{ page.title }}" />
       <meta property="og:type" content="article" />
