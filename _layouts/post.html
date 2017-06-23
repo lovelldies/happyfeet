@@ -55,7 +55,7 @@ layout: default
     {% include social-links.html %}
   </div>
   <div class="col-md-6" id="comments">
-    {% if page.poststatus != 'draft' %}
+    {% if jekyll.environment == 'production' %}
       {% if page.comments %}
         {% include comments.html %}
       {% endif %}

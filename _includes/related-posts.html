@@ -25,11 +25,9 @@
         postImage = postsImage[randomIndex];
 
         if (counter == (numberOfPosts - 1)) {
-          // document.write('<p><a href="' + postHREF + '">' + postTitle + '</a></p>');
-          document.write('<article><a href="' + postHREF + '" class="image"><img src="' + postImage + '" alt="Alternate text" class="img-responsive" /></a><div class="caption"> <h3>' + postTitle + '</h3><p>' + postExcerpt + '</p></div></article>');
+          document.write('<article><a href="' + postHREF + '" class="image"><img alt="'+ postTitle +'" src="' + postImage + '" alt="Alternate text" class="img-responsive lazyload" /></a><div class="caption"> <h3>' + postTitle + '</h3><p>' + postExcerpt + '</p></div></article>');
         } else {
-          // document.write('<p><a href="' + postHREF + '">' + postTitle + '</a></p><hr />');
-          document.write('<article><a href="' + postHREF + '" class="image"><img src="' + postImage + '" alt="Alternate text" class="img-responsive" /></a><div class="caption"> <h3>' + postTitle + '</h3><p>' + postExcerpt + '</p></div></article>');
+          document.write('<article><a href="' + postHREF + '" class="image"><img alt="'+ postTitle +'" src="' + postImage + '" alt="Alternate text" class="img-responsive lazyload" /></a><div class="caption"> <h3>' + postTitle + '</h3><p>' + postExcerpt + '</p></div></article>');
         }
 
         randomIndexUsed.push(randomIndex);
@@ -39,82 +37,3 @@
     </script>
   </div>
 </section>
-<!--
-
-
-  
-    
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-    <article>
-      <a href="#" class="image">
-        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
-      </a>
-      <div class="caption">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
-
-      </div>
-    </article>
-  </div>
-    
-</section>
--->

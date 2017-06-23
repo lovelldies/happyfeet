@@ -81,16 +81,11 @@
   <link href="{{ site.baseurl }}/assets/css/override.css" rel="stylesheet">
 
   {% if page.layout == 'post' %}
-  <script type="text/javascript">
-    var postsHREF = [{% for post in site.posts %}"{{ site.baseurl }}{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
-    var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
-    var postsImage = [{% for post in site.posts %}{% if post.image['main'] %}"{{ post.image['main'] }}"{% else %}"{{ post.image }}"{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}];
-    var postsExcerpt = [{% for post in site.posts %}"{{ post.excerpt }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
-  </script>
+  <script src="{{ site.baseurl }}/assets/js/related-posts.js"></script>
   {% endif %}
 </head>
 <body class="">
-{% if page.poststatus != 'draft' %}
+{% if jekyll.environment == 'production' %}
   {% include google-analytics.html %}
 {% endif %}
 <div id="wrapper" class="container-fluid">
@@ -112,12 +107,11 @@
   <script src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/common.js"></script>
   
-  {% if page.poststatus != 'draft' %}
+  {% if jekyll.environment == 'production' %}
     {% if page.comments %}
       <script id="dsq-count-scr" src="//happyfeetus.disqus.com/count.js" async></script>
     {% endif %}
   {% endif %}
-
 </div>
 </body>
 </html>
