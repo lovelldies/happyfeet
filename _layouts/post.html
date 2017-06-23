@@ -49,12 +49,18 @@ layout: default
 
 {{ content }}
 
-{% include social-links.html %}
-{% if page.poststatus != 'draft' %}
-  {% if page.comments %}
-    {% include comments.html %}
-  {% endif %}
-{% endif %}
 {% include tags.html %}
+<div class="row">
+  <div class="col-md-6" id="social-links">
+    {% include social-links.html %}
+  </div>
+  <div class="col-md-6" id="comments">
+    {% if page.poststatus != 'draft' %}
+      {% if page.comments %}
+        {% include comments.html %}
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
 {% include related-posts.html %}
 {% include sitemap.html %}

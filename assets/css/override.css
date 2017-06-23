@@ -56,6 +56,11 @@ figcaption {
   text-align: center;
 }
 
+.gallery.style2 article .image,
+.gallery.style2 article .image img {
+  height: 100%;
+}
+
 .grey-bg, .orient-left {
   background-color: #f9f9f9;
 }
@@ -87,18 +92,28 @@ postmeta {
   font-size: 0.8rem;
 }
 
-#tags, #social-links, #sitemap {
+#footer,
+#related-posts,
+#tags {
   border-top: 1px solid #f0f0f0;
   background-color: #f9f9f9;
 }
 
-#comments, #footer {
+#comments {
+  border-left: 1px solid #f0f0f0;
+}
+#comments, #sitemap, #social-links{
   border-top: 1px solid #f0f0f0;
 }
 
 .wrapper.wrapper-inner.style1 > .inner {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+#comments .wrapper.style1 > .inner,
+#social-links .wrapper.style1 > .inner {
+  width: 100vw;
 }
 
 #banner-nav ul li, #sitemap ul li {

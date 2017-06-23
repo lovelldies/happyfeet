@@ -1,0 +1,120 @@
+<section id="related-posts" class="wrapper style1 align-center">
+  <div class="inner">
+    <h2>More posts</h2>
+    <p>Here are some more posts from our website. In no particular order of preference. Swipe the thumbnails to browse around.</p>
+  </div>
+  <div class="gallery style2 medium">
+    <script type="text/javascript">
+    var randomIndexUsed = [];
+    var counter = 0;
+    var numberOfPosts = 10;
+
+    while (counter < numberOfPosts) {
+      var randomIndex;
+      var postHREF;
+      var postTitle;
+      var postImage;
+      var postExcerpt;
+
+      randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+      if (randomIndexUsed.indexOf(randomIndex) == "-1") {
+        postHREF = postsHREF[randomIndex];
+        postTitle = postsTitle[randomIndex];
+        postExcerpt = postsExcerpt[randomIndex];
+        postImage = postsImage[randomIndex];
+
+        if (counter == (numberOfPosts - 1)) {
+          // document.write('<p><a href="' + postHREF + '">' + postTitle + '</a></p>');
+          document.write('<article><a href="' + postHREF + '" class="image"><img src="' + postImage + '" alt="Alternate text" class="img-responsive" /></a><div class="caption"> <h3>' + postTitle + '</h3><p>' + postExcerpt + '</p></div></article>');
+        } else {
+          // document.write('<p><a href="' + postHREF + '">' + postTitle + '</a></p><hr />');
+          document.write('<article><a href="' + postHREF + '" class="image"><img src="' + postImage + '" alt="Alternate text" class="img-responsive" /></a><div class="caption"> <h3>' + postTitle + '</h3><p>' + postExcerpt + '</p></div></article>');
+        }
+
+        randomIndexUsed.push(randomIndex);
+        counter++;
+      }
+    }
+    </script>
+  </div>
+</section>
+<!--
+
+
+  
+    
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+    <article>
+      <a href="#" class="image">
+        <img src="https://c2.staticflickr.com/6/5548/31052201400_16a98e2571.jpg" alt="Alternate text" />
+      </a>
+      <div class="caption">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor amet, consectetur magna etiam elit.</p>
+
+      </div>
+    </article>
+  </div>
+    
+</section>
+-->

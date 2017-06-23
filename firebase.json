@@ -5,13 +5,14 @@
       "firebase.json"
     ],
     "redirects": [
-      { "source": "/about/", "destination": "/about", "type": 302 },
-      { "source": "/all/", "destination": "/all", "type": 302 },
-      { "source": "/author/*", "destination": "/authors", "type": 302 },
-      { "source": "/authors/", "destination": "/authors", "type": 302 },
-      { "source": "/sitemap/", "destination": "/sitemap", "type": 302 },
-      { "source": "/tag/*", "destination": "/tags", "type" : 302 },
-      { "source": "/tag", "destination": "/tags", "type": 302 }
+      { "source": "/about/", "destination": "/about", "type": 301 },
+      { "source": "/all/", "destination": "/all", "type": 301 },
+      { "source": "/author/*", "destination": "/authors", "type": 301 },
+      { "source": "/authors/", "destination": "/authors", "type": 301 },
+      { "source": "/sitemap/", "destination": "/sitemap", "type": 301 },
+      { "source": "/tag/*", "destination": "/tags", "type" : 301 },
+      { "source": "/tags/*", "destination": "/tags", "type" : 301 },
+      { "source": "/tag", "destination": "/tags", "type": 301 }
     ],
     "cleanUrls": true,
     "trailingSlash": false

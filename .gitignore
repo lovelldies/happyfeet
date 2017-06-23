@@ -2,6 +2,7 @@
 .firebaserc
 .jekyll-metadata
 _site
+_drafts
 delete
 helper
 imagefetcher.php
