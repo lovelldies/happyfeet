@@ -12,7 +12,12 @@
       { "source": "/sitemap/", "destination": "/sitemap", "type": 301 },
       { "source": "/tag/*", "destination": "/tags", "type" : 301 },
       { "source": "/tags/*", "destination": "/tags", "type" : 301 },
-      { "source": "/tag", "destination": "/tags", "type": 301 }
+      { "source": "/tag", "destination": "/tags", "type": 301 },
+      {
+        "source": "/big-picture/overlooking-oka-volga",
+        "destination": "/russia/overlooking-oka-volga",
+        "type": 301
+      }
     ],
     "cleanUrls": true,
     "trailingSlash": false
