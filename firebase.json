@@ -25,12 +25,12 @@
       },
       {
         "source": "/contact",
-        "destination": "about",
+        "destination": "/about",
         "type": 301
       },
       {
         "source": "/follow-us",
-        "destination": "about",
+        "destination": "/about",
         "type": 301
       },
       {
