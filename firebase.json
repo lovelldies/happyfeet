@@ -17,6 +17,36 @@
         "source": "/big-picture/overlooking-oka-volga",
         "destination": "/russia/overlooking-oka-volga",
         "type": 301
+      },
+      {
+        "source": "/big-picture/church-of-the-intercession-on-the-nerl",
+        "destination": "/russia/church-of-the-intercession-on-the-nerl",
+        "type": 301
+      },
+      {
+        "source": "/contact",
+        "destination": "about",
+        "type": 301
+      },
+      {
+        "source": "/follow-us",
+        "destination": "about",
+        "type": 301
+      },
+      {
+        "source": "/walks/a-walk-around-parra",
+        "destination": "/goa/a-walk-around-parra",
+        "type": 301
+      },
+      {
+        "source": "/big-picture/priya-mattancherry",
+        "destination": "/big-picture/priya-at-mattancherry",
+        "type": 301
+      },
+      {
+        "source": "/big-picture/kitten-sunlight",
+        "destination": "/big-picture/kitten-in-the-sunlight",
+        "type": 301
       }
     ],
     "cleanUrls": true,
