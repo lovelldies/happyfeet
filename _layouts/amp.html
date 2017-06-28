@@ -17,11 +17,11 @@ layout: amp
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="{{ page.excerpt }}">
 
   <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize }} &middot; {% endif %}Happy Feet!</title>
   <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
-  <meta name="description" content="{{ page.excerpt }}">
-
+  
   <style amp-custom>
     @font-face {
       font-family: 'Raleway';
@@ -89,7 +89,7 @@ layout: amp
   <script type="application/json">
   {
     "vars": {
-      "account": "XXXUA-41941997-1"
+      "account": "UA-41941997-1"
     },
     "triggers": {
       "trackPageview": {
@@ -107,8 +107,9 @@ layout: amp
   </header>
   <div id="intro-content">
     <h1>{{ page.title }}</h1>
+    <p>{{ page.excerpt }} / {{ post.excerpt }}</p>
     <div>
-    <p>Posted on <strong>{{ page.date | date: '%B %d, %Y' }}</strong> by <strong>{{ site[author].name }}</strong>.</p></div>
+      <p>Posted on <strong>{{ page.date | date: '%B %d, %Y' }}</strong> by <strong>{{ site[author].name }}</strong>.</p></div>
   </div>
   <div id="main-content">
     {{ content }}

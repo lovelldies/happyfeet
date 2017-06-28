@@ -9,6 +9,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'amp.html')
       self.content               = post.content
+      self.data['excerpt']       = post.excerpt
       self.data['body']          = (Liquid::Template.parse post.content).render site.site_payload
 
       # Merge all data from post so that keys from self.data have higher priority
@@ -16,7 +17,7 @@ module Jekyll
 
       # Remove non needed keys from data
       # Excerpt will cause an error if kept
-      self.data.delete('excerpt')
+      # self.data.delete('excerpt')
       # Generating the page fails silently if page has a permalink and it is copied
       # over to the AMP version
       self.data.delete('permalink')
