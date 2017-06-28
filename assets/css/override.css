@@ -84,6 +84,15 @@ figcaption {
   width: 2.5rem;
 }
 
+.max-width-800 {
+  max-width: 800px;
+  margin:0 auto;
+}
+
+.max-width-560 {
+  max-width: 560px;
+  margin:0 auto;
+}
 p {
   margin: 2rem 0;
 }

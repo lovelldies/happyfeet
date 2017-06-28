@@ -1,5 +1,13 @@
 {% capture yt_id %}{{ include.id }}{% endcapture %}
 
+{% if jekyll.environment == 'amp' %}
+<amp-youtube width="480"
+  height="270"
+  layout="responsive"
+  data-videoid="{{ yt_id }}">
+</amp-youtube>
+{% else %}
 <div class="yt-container">
   <iframe src="https://www.youtube.com/embed/{{ yt_id }}?rel=0" frameborder="0" allowfullscreen class="yt-video"></iframe>
 </div>
+{% endif %}

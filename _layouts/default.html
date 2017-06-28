@@ -9,6 +9,12 @@
   <meta property="fb:app_id" content="220168524773983" />
   <meta property="article:publisher" content="https://happyfeet.us/" />
 
+  {% if page.path contains '_posts' %}
+    {% unless page.skip_amp %}
+      <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+    {% endunless %}
+  {% endif %}
+
   {% if page.author %}
     {% assign author = page.author %}
   {% endif %}
@@ -18,10 +24,12 @@
     <meta name="twitter:title" content="{{ page.sectiontitle }} &middot; Happy Feet!" />
     <meta property="og:title" content="{{ page.sectiontitle }} &middot; Happy Feet!" />
     <meta property="og:type" content="section" />
+    <meta name="twitter:image:alt" content="{{ page.sectiontitle }}">
   {% else %}
     {% if page.title %}
-      <title>{{ page.title }} &middot; {{ page.categories[0] | capitalize }} &middot; Happy Feet!</title>
+      <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize }} &middot; {% endif %}Happy Feet!</title>
       <meta name="twitter:title" content="{{ page.title }} &middot; Happy Feet!" />
+      <meta name="twitter:image:alt" content="{{ page.title }}">
       <meta property="og:title" content="{{ page.title }} &middot; Happy Feet!" />
       <meta property="og:type" content="article" />
       <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}T00:00:00+05:30" />
@@ -29,6 +37,7 @@
     {% else %}
       <title>{{ site.title }}</title>
       <meta name="twitter:title" content="{{ site.title }}" />
+      <meta name="twitter:image:alt" content="{{ site.title }}">
       <meta name="author" content="{{ site.author }}" />
       <meta property="og:title" content="{{ site.title }}" />
       <meta property="og:type" content="website" />
@@ -37,11 +46,22 @@
 
   {% if page.sectionexcerpt %}
     <meta property="og:description" content="{{ page.sectionexcerpt }}" />
+    <meta name="description" content="{{ page.sectionexcerpt }}">
+    <meta itemprop="description" content="{{ page.sectionexcerpt }}">
+    <meta name="twitter:description" content="{{ page.sectionexcerpt }}">
   {% else %}
     {% if page.excerpt %}
       <meta property="og:description" content="{{ page.excerpt }}" />
+      <meta name="description" content="{{ page.excerpt }}">
+      <meta itemprop="description" content="{{ page.excerpt }}">
+      <meta name="twitter:description" content="{{ page.excerpt }}">
+  {% else %}
     {% else %}
       <meta property="og:description" content="{{ site.description }}" />
+      <meta name="description" content="{{ page.description }}">
+      <meta itemprop="description" content="{{ page.description }}">
+      <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
     {% endif %}
   {% endif %}
 
@@ -49,15 +69,18 @@
     <meta property="og:image:secure_url" content="{{ page.image['main'] }}" />
     <meta property="og:image" content="{{ page.image['main'] | replace: 'https://', 'https://' }}" />
     <meta name="twitter:image" content="{{ page.image['main'] }}" />
+    <meta itemprop="image" content="{{ page.image['main'] }}">
   {% else %}
     {% if page.image %}
       <meta property="og:image:secure_url" content="{{ page.image }}" />
       <meta property="og:image" content="{{ page.image | replace: 'https://', 'https://' }}" />
       <meta name="twitter:image" content="{{ page.image }}" />
+      <meta itemprop="image" content="{{ page.image }}">
     {% else %}
       <meta property="og:image:secure_url" content="{{ site.image }}" />
       <meta property="og:image" content="{{ site.image | replace: 'https://', 'https://' }}" />
       <meta name="twitter:image" content="{{ site.image }}" />
+      <meta itemprop="image" content="{{ page.image }}">
     {% endif %}
   {% endif %}
 
