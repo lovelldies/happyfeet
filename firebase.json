@@ -5,17 +5,54 @@
       "firebase.json"
     ],
     "redirects": [
-      { "source": "/about/", "destination": "/about", "type": 301 },
-      { "source": "/all/", "destination": "/all", "type": 301 },
-      { "source": "/author/*", "destination": "/authors", "type": 301 },
-      { "source": "/authors/", "destination": "/authors", "type": 301 },
-      { "source": "/sitemap/", "destination": "/sitemap", "type": 301 },
-      { "source": "/tag/*", "destination": "/tags", "type" : 301 },
-      { "source": "/tags/*", "destination": "/tags", "type" : 301 },
-      { "source": "/tag", "destination": "/tags", "type": 301 },
+      {
+        "source": "/about/",
+        "destination": "/about",
+        "type": 301
+      },
+      {
+        "source": "/all/",
+        "destination": "/all",
+        "type": 301
+      },
+      {
+        "source": "/author/*",
+        "destination": "/authors",
+        "type": 301
+      },
+      {
+        "source": "/authors/",
+        "destination": "/authors",
+        "type": 301
+      },
+      {
+        "source": "/sitemap/",
+        "destination": "/sitemap",
+        "type": 301
+      },
+      {
+        "source": "/tag/*",
+        "destination": "/tags",
+        "type": 301
+      },
+      {
+        "source": "/tags/*",
+        "destination": "/tags",
+        "type": 301
+      },
+      {
+        "source": "/tag",
+        "destination": "/tags",
+        "type": 301
+      },
       {
         "source": "/big-picture/overlooking-oka-volga",
         "destination": "/russia/overlooking-oka-volga",
+        "type": 301
+      },
+      {
+        "source": "/big-picture/glimpse-terkhiin-tsagaan-lake",
+        "destination": "/mongolia/glimpse-terkhiin-tsagaan-lake",
         "type": 301
       },
       {
