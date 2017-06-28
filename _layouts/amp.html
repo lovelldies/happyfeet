@@ -20,7 +20,7 @@ layout: amp
 
   <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize }} &middot; {% endif %}Happy Feet!</title>
   <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ page.excerpt }}">
 
   <style amp-custom>
     @font-face {

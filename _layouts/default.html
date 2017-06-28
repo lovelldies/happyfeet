@@ -58,9 +58,9 @@
   {% else %}
     {% else %}
       <meta property="og:description" content="{{ site.description }}" />
-      <meta name="description" content="{{ page.description }}">
-      <meta itemprop="description" content="{{ page.description }}">
-      <meta name="twitter:description" content="{{ page.description }}">
+      <meta name="description" content="{{ page.excerpt }}">
+      <meta itemprop="description" content="{{ page.excerpt }}">
+      <meta name="twitter:description" content="{{ page.excerpt }}">
   {% else %}
     {% endif %}
   {% endif %}
