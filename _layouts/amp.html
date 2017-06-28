@@ -1,0 +1,120 @@
+---
+layout: amp
+---
+{% assign author = page.author %}
+
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+  <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize }} &middot; {% endif %}Happy Feet!</title>
+  <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="description" content="{{ page.description }}">
+
+  <style amp-custom>
+    @font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+    amp-sidebar {
+      padding: 10px;
+      font-size: 0.8rem;
+      line-height: 1.15rem;
+    }
+    body {
+      font-family: 'Raleway';
+      font-weight: 100;
+    }
+    #menu {
+      background-color: #6f6f6f;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+    #menu button {
+      background: none;
+      border: none;
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+    }
+    header {
+      margin-top: 35px;
+    }
+    #intro-content, #social {
+      padding: 10%;
+      background-color: #efefef;
+    }
+    h1, h2, h3, p {
+      font-weight: 100;
+    }
+    strong {
+      font-weight: 600;
+    }
+    #main-content {
+      margin: 10%;
+    }
+    #main-content amp-img,
+    #main-content amp-iframe,
+    #main-content amp-youtube {
+      margin-top: 20px;
+    }
+    #main-content p,
+    #social p
+     {
+      line-height: 1.4rem;
+      text-align: justify;
+    }
+  </style>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+  <amp-analytics type="googleanalytics">
+  <script type="application/json">
+  {
+    "vars": {
+      "account": "XXXUA-41941997-1"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+  </script>
+  </amp-analytics>
+  <div id="menu"><button on="tap:sidebar.toggle">MENU</button></div>
+  <header>
+    <amp-img src="{{ page.amp-img }}" width="1024" height="683"
+             layout="responsive" alt="{{ page.title }}"></amp-img>
+  </header>
+  <div id="intro-content">
+    <h1>{{ page.title }}</h1>
+    <div>
+    <p>Posted on <strong>{{ page.date | date: '%B %d, %Y' }}</strong> by <strong>{{ site[author].name }}</strong>.</p></div>
+  </div>
+  <div id="main-content">
+    {{ content }}
+  </div>
+  {% include amp-social.html %}
+  {% include amp-menu.html %}
+  <center>{% include footer.html %}</center>
+</body>
+</html>

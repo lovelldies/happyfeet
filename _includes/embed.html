@@ -1,0 +1,39 @@
+{% capture type %}{{ include.type }}{% endcapture %}
+
+{% if type == 'googlemap' %}
+  {% capture src %}{{ include.src }}{% endcapture %}
+  {% if jekyll.environment == 'amp' %}
+    <amp-iframe width="600"
+      height="400"
+      layout="responsive"
+      sandbox="allow-scripts allow-same-origin allow-popups"
+      frameborder="0"
+      src="{{ src }}">
+    </amp-iframe>
+  {% else %}
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="{{ src }}" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  {% endif %}
+{% endif %}
+
+
+{% if type == 'instagram' %}
+  {% capture src %}{{ include.src }}{% endcapture %}
+  <amp-instagram data-shortcode="{{ src }}"
+    data-captioned
+    width="1"
+    height="1"
+    layout="responsive">
+  </amp-instagram>
+{% endif %}
+
+
+{% if type == 'instagram' %}
+  {% capture src %}{{ include.src }}{% endcapture %}
+  <amp-facebook width="552"
+    height="310"
+    layout="responsive"
+    data-href="{{ src }}">
+  </amp-facebook>
+{% endif %}

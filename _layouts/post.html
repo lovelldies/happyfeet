@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign cat = page.categories limit:1 %}
+{% assign cat = page.categories[0] %}
 
 {% assign words = cat | remove: '["' | remove: '"]' | split: '-' %}
 {% capture catname %}
