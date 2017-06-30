@@ -5,14 +5,13 @@ title: Happy Feet! &middot; Travel Stories &amp; Photos by Priya &amp; Lovell
 description: Stories, photographs and thoughts from a travelling couple taking walks and mapping their routes, while backpacking around India, and parts of the world.
 image: https://c1.staticflickr.com/9/8637/16691603885_fed7873429_h.jpg
 environment: development
-exclude: ['README.md', 'firebase.json', 'firebase-debug.log', 'helper', 'public', 'workflow.txt', '_plugins']
+exclude: ['README.md', 'firebase.json', 'firebase-debug.log', 'Gemfil.lock', helper', 'public', 'workflow.txt', '_plugins']
 name: The Happy Feet Website
 permalink: /:categories/:title
 preloadimage: https://happyfeet.us/assets/img/loading.gif
 livesiteurl: https://happyfeet.us
 
-plugins:
-  - amp-jekyll
+plugins: [ amp-jekyll ]
 ampdir: amp
 
 # Authors of the website.

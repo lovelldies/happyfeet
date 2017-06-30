@@ -5,6 +5,7 @@ _site
 _site/amp
 _drafts
 delete
+Gemfile.lock
 helper
 imagefetcher.php
 imagefetcher2.php

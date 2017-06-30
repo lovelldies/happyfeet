@@ -9,7 +9,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'amp.html')
       self.content               = post.content
-      self.data['excerpt']       = post.excerpt
+      self.data['excerpt']       = post.to_liquid['excerpt']
       self.data['body']          = (Liquid::Template.parse post.content).render site.site_payload
 
       # Merge all data from post so that keys from self.data have higher priority
@@ -31,7 +31,7 @@ module Jekyll
     def generate(site)
       dir = site.config['ampdir'] || 'amp'
       site.posts.docs.each do |post|
-        next if post.data['skip_amp'] == true
+        next if post.data['amp'] != true
         site.pages << AmpPost.new(site, site.source, File.join(dir, post.id), post)
       end
     end

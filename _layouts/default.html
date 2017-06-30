@@ -10,9 +10,9 @@
   <meta property="article:publisher" content="https://happyfeet.us/" />
 
   {% if page.path contains '_posts' %}
-    {% unless page.skip_amp %}
+    {% if page.amp %}
       <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
-    {% endunless %}
+    {% endif %}
   {% endif %}
 
   {% if page.author %}
