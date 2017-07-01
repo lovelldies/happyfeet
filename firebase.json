@@ -51,6 +51,16 @@
         "type": 301
       },
       {
+        "source": "/big-picture/qolsarif-mosque-kazan",
+        "destination": "/russia/qolsarif-mosque-kazan",
+        "type": 301
+      },
+      {
+        "source": "/big-picture/the-church-of-the-savior-on-spilled-blood",
+        "destination": "/russia/the-church-of-the-savior-on-spilled-blood",
+        "type": 301
+      },
+      {
         "source": "/big-picture/glimpse-terkhiin-tsagaan-lake",
         "destination": "/mongolia/glimpse-terkhiin-tsagaan-lake",
         "type": 301

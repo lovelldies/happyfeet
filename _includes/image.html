@@ -1,32 +1,32 @@
-{% capture img_path %}{{ include.loc }}{% endcapture %}
-{% capture img_alt %}{{ include.alt }}{% endcapture %}
+{%- capture img_path -%}{{- include.loc -}}{%- endcapture -%}
+{%- capture img_alt -%}{{- include.alt -}}{%- endcapture -%}
 
-{% if include.caption != null %}
-  {% capture img_caption %}{{ include.caption }}{% endcapture %}
-{% else %}
-  {% capture img_caption %}{{ include.alt }}{% endcapture %}
-{% endif %}
+{%- if include.caption != null -%}
+  {%- capture img_caption -%}{{- include.caption -}}{%- endcapture -%}
+{%- else -%}
+  {%- capture img_caption -%}{{- include.alt -}}{%- endcapture -%}
+{%- endif -%}
 
-{% if include.datasrcset != null %}
-  {% assign data_src = include.datasrcset %}
-{% else %}
-  {% assign data_src = include.loc %}
-{% endif %}
+{%- if include.datasrcset != null -%}
+  {%- assign data_src = include.datasrcset -%}
+{%- else -%}
+  {%- assign data_src = include.loc -%}
+{%- endif -%}
 
-{% if jekyll.environment == 'amp' %}
+{%- if jekyll.environment == 'amp' -%}
 <amp-img layout="responsive" width="1024" height="683"
-  src="{{ img_path }}"
-  srcset="{{ data_src }}"
-  alt="{{ img_alt }}"></amp-img>
-  <small>{{ img_caption }}</small>
-{% else %}
+  src="{{- img_path -}}"
+  srcset="{{- data_src -}}"
+  alt="{{- img_alt -}}"></amp-img>
+  <small>{{- img_caption -}}</small>
+{%- else -%}
 <figure>
   <span class="image fit">
-    <img alt="{{ img_alt }}" title="{{ img_alt }}" class="lazyload"
-         srcset="{{ site.preloadimage }}" data-sizes="auto"
-         src="{{ img_path }}"
-         data-srcset="{{ data_src }}" />
-    <figcaption>{{ img_caption }}</figcaption>
+    <img alt="{{- img_alt -}}" title="{{- img_alt -}}" class="lazyload"
+         srcset="{{- site.preloadimage -}}" data-sizes="auto"
+         src="{{- img_path -}}"
+         data-srcset="{{- data_src -}}" />
+    <figcaption>{{- img_caption -}}</figcaption>
   </span>
 </figure>
-{% endif %}
+{%- endif -%}

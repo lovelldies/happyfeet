@@ -10,6 +10,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'amp.html')
       self.content               = post.content
       self.data['excerpt']       = post.to_liquid['excerpt']
+      # self.data['permalink']     = post.to_liquid['permalink']
       self.data['body']          = (Liquid::Template.parse post.content).render site.site_payload
 
       # Merge all data from post so that keys from self.data have higher priority

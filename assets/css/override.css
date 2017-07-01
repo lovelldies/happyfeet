@@ -35,6 +35,10 @@ a:hover {
   border-bottom: 1px solid #f0f0f0;
 }
 
+.box p {
+  margin: 0;
+}
+
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
