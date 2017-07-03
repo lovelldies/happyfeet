@@ -1,0 +1,16 @@
+---
+---
+[
+  {% for post in site.posts %}
+  {% if post.amp-img %}
+    {% assign img = post.amp-img %}
+    {
+      "title"    : "{{ post.title }}",
+      "href"     : "{{ site.baseurl}}{{ post.url }}",
+      "image"    : "{{ img }}",
+      "excerpt"  : "{{ post.excerpt }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endif %}
+    {% endfor %}
+]

@@ -1,0 +1,47 @@
+{% for post in site.posts offset:0 limit:4 %}
+{% assign cat = post.categories[0] %}
+
+{% assign words = cat | remove: '["' | remove: '"]' | split: '-' %}
+{% capture catname %}
+  {% for word in words %}{{ word | capitalize }} {% endfor %}
+{% endcapture %}
+
+{% if post.image.datasrcset %}
+  {% assign src = post.image.main %}
+  {% assign data_srcset = post.image.datasrcset %}
+{% else %}
+  {% assign src = post.image %}
+  {% assign data_srcset = post.image %}
+{% endif %}
+
+{% if forloop.index == 1 %}
+  <section class="banner style1 orient-left content-align-left image-position-center fullscreen">
+{% else %}
+  <section class="spotlight style1 content-align-left image-position-center {% cycle 'orient-right', 'orient-left' %}">
+{% endif %}
+  <div class="content">
+    <postmeta>
+      <time><i class="fa fa-clock-o"></i> {% if forloop.index == 1 %}Lastest Post{% else %}{{ post.date | date: '%B %d, %Y' }}{% endif %}</time> &middot; <category>
+        <a href="{{ site.baseurl }}/{{ cat }}/" title="Category">{{ catname }}</a>
+      </category>
+    </postmeta>
+    <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+    <p>{% if post.long_excerpt != null %}
+         {{ post.long_excerpt }}
+       {% else %}
+         {{ post.excerpt }}
+       {% endif %}</p>
+    <ul class="actions vertical">
+      <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read on</a></li>
+    </ul>
+  </div>
+  <div class="image">
+    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ page.title }}">
+      <img class="lazyload" alt="{{ page.title }}" title="{{ page.title }}"
+           srcset="{{ site.preloadimage }}" data-sizes="auto"
+           src="{{ src }}"
+           data-srcset="{{ data_srcset }}" />
+    </a>
+  </div>
+</section>
+{% endfor %}
