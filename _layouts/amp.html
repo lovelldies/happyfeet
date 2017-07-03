@@ -111,10 +111,11 @@ layout: amp
     <div>
       <p>Posted on <strong>{{ page.date | date: '%B %d, %Y' }}</strong> by <strong>{{ site[author].name }}</strong>.</p></div>
   </div>
+  {% include amp-ad.html position='top' %}
   <div id="main-content">
     {{ content }}
   </div>
-  {% include amp-ad.html %}
+  {% include amp-ad.html position='bottom' %}
   {% include amp-social.html %}
   {% include amp-menu.html %}
   <center>{% include footer.html %}</center>
