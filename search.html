@@ -1,0 +1,46 @@
+---
+layout: default
+title: Search
+permalink: /search
+excerpt: Search the Happy Feet website.
+changefreq: weekly
+priority: 1.0
+search_omit: true
+
+sectiontitle: Search
+sectionexcerpt: Search the Happy Feet website.
+
+image:
+  main: https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_c.jpg
+  datasrcset: 'https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_n.jpg 320w, https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e.jpg 500w, https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_z.jpg 640w, https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_c.jpg 800w, https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_b.jpg 1024w, https://farm6.staticflickr.com/5773/31306997811_18af7fea99_h.jpg 1600w, https://farm6.staticflickr.com/5773/31306997811_d7a66b9cc2_k.jpg 2048w'
+---
+<section id="search-section" class="spotlight style1 content-align-left grey-bg">
+  <div class="content">
+    <h1>Search</h1>
+    <p class="major">Search the Happy Feet website.</p>
+    <form method="get" action="{{ site.baseurl }}/search" data-search-form>
+      <div class="row-fluid">
+        <div class="col-md-8">
+        <div class="field">
+          <input style="background-color:#fff;" type="search" name="q" id="q" placeholder="Enter search term" data-search-input autofocus />
+        </div>
+        </div>
+        <div class="col-md-4">
+        <ul class="actions">
+          <li ><input type="submit" class="special" value="Search" /></li>
+        </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="wrapper wrapper-inner style1 align-left">
+  <div class="inner">
+    <em data-search-found ><span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.</em>
+    <div data-search-results id="search-results">
+      <ul class="alt"><script type="text/x-template" id="search-result"><li class="resetdefaults"><h2><a href="##Url##">##Title##</a></h2><p>##Excerpt##</p><ul class="actions vertical"><li><a href="##Url##" class="button">Read on</a></li></ul></li></script></ul>
+    </div>
+  <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+  </div>
+</section>

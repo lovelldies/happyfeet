@@ -1,0 +1,18 @@
+---
+---
+{% assign first = true %}
+[
+{% for post in site.posts %}
+    {% if post.title != null and post.title != empty %}
+    {% unless first %},{% endunless %}{
+        "title": {{post.title | jsonify}},
+        "link": "{{ site.baseurl }}{{ post.url }}",
+        "tags": "{{post.tags | join: ', ' }}",
+        "date": "{{ post.date }}",
+        "excerpt": "{{ post.excerpt }}",
+        "search_omit": "{{ post.search_omit }}"
+    }
+    {% assign first = false %}
+    {% endif %}
+{% endfor %}
+]

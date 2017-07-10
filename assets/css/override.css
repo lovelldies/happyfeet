@@ -167,6 +167,18 @@ ul.icons li {
   margin-bottom: 0;
 }
 
+.resetdefaults {
+  list-style: none;
+  padding-top: 50px;
+  border-top: 1px solid #ececec;
+  margin-top: 20px;
+}
+
+#search-results p {
+  margin: 1rem 0;
+  padding: 0 5px;
+}
+
 #section-header h1,
 #section-header p,
 #section-header a {
