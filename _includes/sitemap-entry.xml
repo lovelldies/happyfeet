@@ -1,18 +1,18 @@
 <url>
-  {%- if page.amp -%}
+  {% if page.amp %}
     <loc>https://happyfeet.us{{ include.entry.url | split: "/" | join: "/" }}</loc>
-  {%- else -%}
+  {% else %}
     <loc>https://happyfeet.us{{ include.entry.url }}</loc>
-  {%- endif -%}
-  {%- if post.date -%}
+  {% endif %}
+  {% if post.date %}
     <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
-  {%- endif -%}
-  {%- if include.entry.changefreq -%}
+  {% endif %}
+  {% if include.entry.changefreq %}
     <changefreq>{{ include.entry.changefreq }}</changefreq>
-  {%- endif -%}
-  {%- if include.entry.priority -%}
+  {% endif %}
+  {% if include.entry.priority %}
     <priority>{{ include.entry.priority }}</priority>
-  {%- else -%}
+  {% else %}
     <priority>0.5</priority>
-  {%- endif -%}
+  {% endif %}
 </url>

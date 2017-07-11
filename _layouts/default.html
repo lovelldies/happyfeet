@@ -9,15 +9,15 @@
   <meta property="fb:app_id" content="220168524773983" />
   <meta property="article:publisher" content="https://happyfeet.us/" />
 
-  {%- if page.path contains '_posts' -%}
-    {%- if page.amp -%}
+  {% if page.path contains '_posts' %}
+    {% if page.amp %}
       <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
-    {%- endif -%}
-  {%- endif -%}
+    {% endif %}
+  {% endif %}
 
-  {%- if page.author -%}
-    {%- assign author = page.author -%}
-  {%- endif -%}
+  {% if page.author %}
+    {% assign author = page.author %}
+  {% endif %}
 
   {% if page.sectiontitle %}
     <title>{{ page.sectiontitle }} &middot; Happy Feet!</title>
