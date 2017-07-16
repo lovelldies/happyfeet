@@ -87,6 +87,7 @@ layout: amp
 </head>
 <body>
   <amp-analytics type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-41941997-1"},"triggers":{"rackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics>
+  {% include amp-menu.html %}
   <div id="menu"><button on="tap:sidebar.toggle">MENU</button></div>
   <header>
     <amp-img src="{{ page.amp-img }}" width="1024" height="683"
@@ -103,7 +104,6 @@ layout: amp
   </div>
   {% include amp-ad.html position='bottom' %}
   {% include amp-social.html %}
-  {% include amp-menu.html %}
   <center>{% include footer.html %}</center>
 </body>
 </html>
