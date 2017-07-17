@@ -1,3 +1,5 @@
+---
+---
 /**
  * A simple JSON search
  * Requires jQuery (v 1.7+)
@@ -11,7 +13,7 @@
     Initialisation
     ========================================================================== */
 
-var q, jsonFeedUrl = "/feeds/feed.json",
+var q, jsonFeedUrl = "{{ site.baseurl }}/feed.json",
     $searchForm = $("[data-search-form]"),
     $searchInput = $("[data-search-input]"),
     $resultTemplate = $("#search-result"),
@@ -25,10 +27,10 @@ var q, jsonFeedUrl = "/feeds/feed.json",
 
 
 $(document).ready( function() {
-    // hide items found string
+    /* hide items found string */
     $foundContainer.hide();
 
-    // initiate search functionality
+    /* initiate search functionality */
     initSearch();
 });
 
@@ -47,14 +49,14 @@ $(document).ready( function() {
  */
 function initSearch() {
 
-    // Get search results if q parameter is set in querystring
+    /* Get search results if q parameter is set in querystring */
     if (getParameterByName('q')) {
         q = decodeURIComponent(getParameterByName('q'));
         $searchInput.val(q);
         execSearch(q);
     }
 
-    // Get search results on submission of form
+    /* Get search results on submission of form */
     $(document).on("submit", $searchForm, function(e) {
         e.preventDefault();
         q = $searchInput.val();
@@ -112,7 +114,7 @@ function processData() {
             results = "";
 
         $.each(data, function(index, item) {
-            // check if search term is in content or title 
+            /* check if search term is in content or title */
             /* Temporarily disabling this as indexing the content makes the JSON file huge.
             if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1)) { */
             if (item.search_omit != "true" && 
@@ -142,7 +144,7 @@ function processData() {
  * @return null
  */
 function showSearchResults(results) {
-    // Add results HTML to placeholder
+    /* Add results HTML to placeholder  */
     $resultsPlaceholder.html(results);
 }
 

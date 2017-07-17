@@ -31,7 +31,7 @@ To **test AMP locally**, run the command below.
 ```sh
 JEKYLL_ENV=amp bundle exec jekyll serve
 ```
-This will create an `amp` folder inside the `_site` folder, with all the pages which have `amp: true` set in the YAML front matter block. The AMP content can be viewed via `http://localhost:4000/happyfeet/amp/category-name/page`.
+This will create an `amp` folder inside the `_site` folder, for all the pages that have `amp: true` set in the YAML front matter block. The AMP content can be viewed via `http://localhost:4000/happyfeet/amp/category-name/page`.
 
 [AMP validation](https://www.ampproject.org/docs/guides/validate) can be done by adding `#development=1` to the end of the URL and checking the developer console in the browser for errors.
 
@@ -52,7 +52,7 @@ JEKYLL_ENV=production bundle exec jekyll build --baseurl ""
 
 **!** Before we push the website live, make sure to copy the `amp` folder back into the `_site` folder.
 
-Then ush our freshly built website to the live URL by running:
+Then push our freshly built website to the live URL by running:
 ```sh
 firebase deploy
 ```

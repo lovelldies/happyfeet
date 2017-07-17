@@ -51,7 +51,7 @@ image:
 
     <h2>A wall full of tags!</h2>
     {% for tag in tags %}
-      <a href="#{{ tag | slugify }}">{{ tag }}</a>, 
+      <a href="#{{ tag | slugify }}">{{ tag | capitalize }}</a>, 
     {% endfor %}
   </div>
 </section>

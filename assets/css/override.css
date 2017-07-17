@@ -137,6 +137,13 @@ postmeta {
   list-style: none;
   padding-left: 0;
 }
+#banner-nav ul li {
+  display: inline;
+  margin: 0 5px;
+}
+#sitemap ul {
+  padding-left: 0;
+}
 
 .ul-inline {
   margin-bottom: 0.8rem;
@@ -172,6 +179,10 @@ ul.icons li {
   padding-top: 50px;
   border-top: 1px solid #ececec;
   margin-top: 20px;
+}
+
+#search-nav {
+  background-color: #fff;
 }
 
 #search-results p {

@@ -1,6 +1,12 @@
 <section class="wrapper style1 align-center" id="footer">
   <div class="inner">
     <h3>Happy Feet &copy; 2017</h3>
-    <p>{% unless page.amp %}<a href="javascript:void(0);" on="tap:sidebar.toggle" id="footermenulink">Menu</a> &middot; {% endunless %}<a href="https://eepurl.com/XGWtT" target="_blank">Subscribe</a> &middot; Website by <strong><a href="http://www.lovelldsouza.com/" target="_blank">Lovell D&apos;souza</a></strong>.</p>
+    <p>
+      {% unless page.amp %}
+      <a href="javascript:void(0);" on="tap:sidebar.toggle" id="footermenulink">Menu</a> &middot; 
+      <a href="{{ site.baseurl }}/search">Search</a> &middot; 
+      {% endunless %}
+      <a href="https://eepurl.com/XGWtT" target="_blank">Subscribe</a>
+      <br>Website by <strong><a href="http://www.lovelldsouza.com/" target="_blank">Lovell D&apos;souza</a></strong>.</p>
   </div>
 </section>
