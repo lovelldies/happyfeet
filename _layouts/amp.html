@@ -21,7 +21,7 @@ layout: amp
   <meta name="description" content="{{ page.excerpt }}">
 
   <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize | split: '-' | join : ' ' }} &middot; {% endif %}Happy Feet!</title>
-  <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="canonical" href="https://happyfeet.us{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
   <style amp-custom>
     @font-face {
