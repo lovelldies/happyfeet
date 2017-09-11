@@ -21,14 +21,15 @@ layout: amp
   <meta name="description" content="{{ page.excerpt }}">
 
   <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize | split: '-' | join : ' ' }} &middot; {% endif %}Happy Feet!</title>
-  <link rel="canonical" href="https://happyfeet.us{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="canonical" href="https://happyfeet.us{{ page.canonical_url }}" />
+  <link rel="canonical" href="{{ page.id | prepend: site.livesiteurl }}" />
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
   <style amp-custom>
     @font-face {
-      font-family: 'Raleway';
+      font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
-      src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+      src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
     }
     amp-sidebar {
@@ -37,8 +38,12 @@ layout: amp
       line-height: 1.15rem;
     }
     body {
-      font-family: 'Raleway';
+      font-family: 'Roboto';
       font-weight: 100;
+    }
+    blockquote {
+      font-style: italic;
+      font-size: 0.9rem;
     }
     #menu {
       background-color: #6f6f6f;
@@ -90,7 +95,13 @@ layout: amp
   {% include amp-menu.html %}
   <div id="menu"><button on="tap:sidebar.toggle">MENU</button></div>
   <header>
-    <amp-img src="{{ page.amp-img }}" width="1024" height="683"
+    {% if page.imageratio == 'wide' %}
+      {% assign img_ratio = 'width="320" height="180"' %}
+    {% else %}
+      {% assign img_ratio = 'width="1024" height="683"' %}
+    {% endif %}
+
+    <amp-img src="{{ page.amp-img }}" {{ img_ratio }}
              layout="responsive" alt="{{ page.title }}"></amp-img>
   </header>
   <div id="intro-content">

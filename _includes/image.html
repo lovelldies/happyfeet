@@ -13,7 +13,7 @@
   {% assign data_src = include.loc %}
 {% endif %}
 
-{% if jekyll.environment == 'amp' %}
+{% if site.environment == 'amp' %}
   {% if page.imageratio == 'wide' %}
     {% assign img_ratio = 'width="320" height="180"' %}
   {% else %}

@@ -5,7 +5,7 @@
 {% for post in site.posts %}
     {% if post.title != null and post.title != empty %}
     {% unless first %},{% endunless %}{
-        "title": {{post.title | jsonify}},
+        "title": {{post.title | jsonify }},
         "link": "{{ site.baseurl }}{{ post.url }}",
         "tags": "{{post.tags | join: ', ' }}",
         "date": "{{ post.date }}",

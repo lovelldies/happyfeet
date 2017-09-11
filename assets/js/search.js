@@ -6,8 +6,11 @@
  *
  * @author  Mat Hayward - Erskine Design
  * @version  0.1
+ *
+ * Updated by Lovell D'souza
+ *
+ * 
  */
-
 
  /* ==========================================================================
     Initialisation
@@ -25,7 +28,6 @@ var q, jsonFeedUrl = "{{ site.baseurl }}/feed.json",
     showLoader = true,
     loadingClass = "is--loading";
 
-
 $(document).ready( function() {
     /* hide items found string */
     $foundContainer.hide();
@@ -34,13 +36,9 @@ $(document).ready( function() {
     initSearch();
 });
 
-
-
-
  /* ==========================================================================
     Search functions
     ========================================================================== */
- 
 
 /**
  * Initiate search functionality.

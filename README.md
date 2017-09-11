@@ -9,7 +9,7 @@ git pull
 
 ### Testing on a local server
 ```sh
-bundle exec jekyll serve -w -I
+jekyll serve -W -I
 ```
 - `-w` watches for changes and rebuilds
 - `-I` does only incremental rebuilds
@@ -29,7 +29,7 @@ The github version, which we use for staging, is here: https://lovelldies.github
 ### Accelerated Mobile Pages (AMP)
 To **test AMP locally**, run the command below.
 ```sh
-JEKYLL_ENV=amp bundle exec jekyll serve
+jekyll serve --config _config_amp.yml
 ```
 This will create an `amp` folder inside the `_site` folder, for all the pages that have `amp: true` set in the YAML front matter block. The AMP content can be viewed via `http://localhost:4000/happyfeet/amp/category-name/page`.
 
@@ -37,7 +37,7 @@ This will create an `amp` folder inside the `_site` folder, for all the pages th
 
 To generate **AMP for the live website**, run the command below and follow the steps after.
 ```sh
-JEKYLL_ENV=amp bundle exec jekyll build --baseurl ""
+jekyll build --config _config_amp.yml
 ```
 - Move this folder out of the `_site` folder.
 - Run the command for "Deploying to Firebase" (section below).
@@ -45,7 +45,7 @@ JEKYLL_ENV=amp bundle exec jekyll build --baseurl ""
 ### Deploying to Firebase
 The live website is hosted on [Firebase](https://firebase.google.com/). Before deploying we need to build the website.
 ```sh
-JEKYLL_ENV=production bundle exec jekyll build --baseurl ""
+jekyll build --config _config_live.yml
 ```
 - Certain parts of the code like, Google Analytics & Disqus are disabled on the local server. `JEKYLL_ENV=production` sets the production flag and enables these lines on code on building. This is automatically set on Github pages.
 - The `baseurl` is set to `""` as our live website runs directly on the `https://happyfeet.us/` domain, without the trailing `happyfeet` which we have on the local server and github pages.

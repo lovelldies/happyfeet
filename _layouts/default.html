@@ -14,6 +14,7 @@
       <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
   {% endif %}
+  <link rel="canonical" href="{{ page.id | prepend: site.livesiteurl }}" />
 
   {% if page.author %}
     {% assign author = page.author %}
@@ -105,11 +106,10 @@
   <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 </head>
 <body class="">
-{% if jekyll.environment == 'production' %}
+{% if site.environment == 'production' %}
   {% include google-analytics.html %}
   {% include fb.html %}
 {% endif %}
-
 <div id="wrapper" class="container-fluid">
   {% include banner-nav.html %}
   
@@ -128,7 +128,7 @@
   <script src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/common.js"></script>
   
-  {% if jekyll.environment == 'production' %}
+  {% if site.environment == 'production' %}
     {% if page.comments %}
       <script id="dsq-count-scr" src="//happyfeetus.disqus.com/count.js" async></script>
     {% endif %}
