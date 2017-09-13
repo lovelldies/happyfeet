@@ -4,6 +4,7 @@
 _site
 _site/amp
 _drafts
+amp_site
 delete
 Gemfile.lock
 helper

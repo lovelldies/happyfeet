@@ -22,7 +22,6 @@ layout: amp
 
   <title>{{ page.title }} &middot; {% if page.categories %}{{ page.categories[0] | capitalize | split: '-' | join : ' ' }} &middot; {% endif %}Happy Feet!</title>
   <link rel="canonical" href="https://happyfeet.us{{ page.canonical_url }}" />
-  <link rel="canonical" href="{{ page.id | prepend: site.livesiteurl }}" />
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
   <style amp-custom>
     @font-face {
@@ -100,7 +99,6 @@ layout: amp
     {% else %}
       {% assign img_ratio = 'width="1024" height="683"' %}
     {% endif %}
-
     <amp-img src="{{ page.amp-img }}" {{ img_ratio }}
              layout="responsive" alt="{{ page.title }}"></amp-img>
   </header>
