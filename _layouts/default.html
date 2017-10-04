@@ -11,7 +11,7 @@
 
   {% if page.path contains '_posts' %}
     {% if page.amp %}
-      <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+      <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.livesiteurl }}">
     {% endif %}
   {% endif %}
   <link rel="canonical" href="{{ page.id | prepend: site.livesiteurl }}" />
