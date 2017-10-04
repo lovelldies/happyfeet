@@ -5,10 +5,12 @@ machine:
 dependencies:
   pre:
     - npm install -g firebase-tools
+    - gem install jekyll bundler
+    - gem install amp-jekyll
 
 compile:
   override:
-    - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml
+    - bundle exec jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml
 
 test:
   override:
