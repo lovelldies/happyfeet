@@ -2,7 +2,7 @@
 
 {% if type == 'googlemap' %}
   {% capture src %}{{ include.src }}{% endcapture %}
-  {% if site.environment == 'amp' %}
+  {% if page.layout == 'amp' %}
     <amp-iframe width="600"
       height="400"
       layout="responsive"

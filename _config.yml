@@ -10,6 +10,9 @@ permalink: /:categories/:title
 preloadimage: https://happyfeet.us/assets/img/loading.gif
 livesiteurl: https://happyfeet.us
 
+plugins: [ amp-jekyll ]
+ampdir: amp
+
 # Authors of the website.
 lovell:
   name: Lovell D&#x27;souza

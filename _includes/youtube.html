@@ -1,6 +1,6 @@
 {% capture yt_id %}{{ include.id }}{% endcapture %}
 
-{% if site.environment == 'amp' %}
+{% if page.layout == 'amp' %}
 <amp-youtube width="480"
   height="270"
   layout="responsive"
