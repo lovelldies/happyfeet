@@ -1,6 +1,8 @@
 # The Happy Feet Website
 The new [Happy Feet website](https://happyfeet.us) is a completely static website generated using [Jekyll](https://jekyllrb.com/).
 
+[![Build Status](https://travis-ci.org/lovelldies/happyfeet.svg?branch=gh-pages)](https://travis-ci.org/lovelldies/happyfeet)
+
 ### Before we begin
 Make sure to pull all the changes from the github repo, as there might be multiple branches running on multiple machines.
 ```sh

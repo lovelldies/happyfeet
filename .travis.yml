@@ -21,4 +21,4 @@ script:
   - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+  - firebase deploy --token $FIREBASE_TOKEN --project "praxis-window-378" --non-interactive
