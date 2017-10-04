@@ -20,5 +20,10 @@ install:
 script:
   - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml
 
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN --project praxis-window-378 --non-interactive
+before_deploy: "echo 'ready?'"
+
+deploy:
+  provider: firebase
+  token:
+    secure: "$FIREBASE_TOKEN"
+  project: "praxis-window-378"
