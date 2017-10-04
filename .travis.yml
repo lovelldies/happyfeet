@@ -18,7 +18,7 @@ install:
   - npm install -g firebase-tools
 
 script:
-  - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml --verbose
+  - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml
 
 after_success:
-  - firebase deploy --token=${FIREBASE_TOKEN}
+  - firebase deploy --token=${FIREBASE_TOKEN} --non-interactive
