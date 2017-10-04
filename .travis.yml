@@ -14,9 +14,10 @@ before_install:
 
 install:
   - gem install jekyll
+  - gem install amp-jekyll
   - npm install -g firebase-tools
 
 before_script:
   - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml --verbose
 script:
-  - firebase deploy --token="$FIREBASE_TOKEN"
+  - firebase deploy --token $FIREBASE_TOKEN
