@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+  - 2.4.1
+
+branches:
+  only:
+    - gh-pages
+
+sudo: required
+
+before_install:
+  - nvm install node
+  - ruby -v
+
+install:
+  - gem install jekyll
+  - npm install -g firebase-tools
+
+before_script:
+  - jekyll build JEKYLL_ENV=production --config _config.yml,_config_live.yml --verbose
+script:
+  - firebase deploy --token="$FIREBASE_TOKEN"
