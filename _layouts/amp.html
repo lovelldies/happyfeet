@@ -105,10 +105,12 @@ layout: amp
   <div id="intro-content">
     <h1>{{ page.title }}</h1>
     <div>
-      <p>Posted on <strong>{{ page.date | date: '%B %d, %Y' }}</strong> by <strong>{{ site[author].name }}</strong>.</p></div>
+      <p>Posted on <strong>{{ page.date | date: '%B %d, %Y' }}</strong> by <strong>{{ site[author].name }}</strong>.</p>
+    </div>
   </div>
   {% include amp-ad.html position='top' %}
   <div id="main-content">
+    {% if page.blockquote %}<blockquote>{{ page.blockquote }}</blockquote>{% endif %}
     {{ content }}
   </div>
   {% include amp-ad.html position='bottom' %}

@@ -1,5 +1,6 @@
 {% capture img_path %}{{- include.loc -}}{% endcapture %}
 {% capture img_alt %}{{- include.alt -}}{% endcapture %}
+{% capture img_ratio %}{{- include.imageratio -}}{% endcapture %}
 
 {% if include.caption != null %}
   {% capture img_caption %}{{- include.caption -}}{% endcapture %}
@@ -14,12 +15,12 @@
 {% endif %}
 
 {% if page.layout == 'amp' %}
-  {% if page.imageratio == 'wide' %}
-    {% assign img_ratio = 'width="320" height="180"' %}
+  {% if img_ratio == 'wide' %}
+    {% assign img_ratio_values = 'width="320" height="180"' %}
   {% else %}
-    {% assign img_ratio = 'width="1024" height="683"' %}
+    {% assign img_ratio_values = 'width="1024" height="683"' %}
   {% endif %}
-<amp-img layout="responsive" {{ img_ratio }}
+<amp-img layout="responsive" {{ img_ratio_values }}
   src="{{- img_path -}}"
   srcset="{{- data_src -}}"
   alt="{{- img_alt -}}"></amp-img>
