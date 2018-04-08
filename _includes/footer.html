@@ -1,6 +1,6 @@
 <section class="wrapper style1 align-center" id="footer">
   <div class="inner">
-    <h3>Happy Feet &copy; 2017</h3>
+    <h3>Happy Feet &copy; {{ site.time | date: '%Y' }}</h3>
     <p>
       {% unless page.amp %}
       <a href="javascript:void(0);" on="tap:sidebar.toggle" id="footermenulink">Menu</a> &middot; 

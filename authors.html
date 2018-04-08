@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Authors
-excerpt: Here are all the posts we&apos;ve made so far. All sorted out neatly by location or category.
+excerpt: Here are all the stories written by us so far. Categorized by author name.
 permalink: /authors
 priority: 0.8
 
@@ -14,13 +14,14 @@ image:
 ---
 
 {% assign pageauthor = page.author %}
+{% assign grouped_author_posts = site.posts | group_by: 'author' | reverse %}
 
 <div id="post-sections">
 <section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
   <div class="content">
     <h1>Authors</h1>
-    <p class="major">This page is coming soon.</p>
-    <p>Still need to sort some code out here.</p>
+    <p class="major">Stories, photographs, thoughts and haikus from a couple taking walks, mapping routes and experiencing the world, one adventure at a time.</p>
+    <p>Here are posts sorted by the author names.</p>
   </div>
   <div class="image">
     <img class="lazyload" alt="Priya, tying her laces in Mongolia." title="Priya, tying her laces in Mongolia."
@@ -29,51 +30,20 @@ image:
          data-srcset="https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_b.jpg 1024w, https://farm6.staticflickr.com/5773/31306997811_18af7fea99_h.jpg 1600w" />
   </div>
 </section>
-
-<!--
-<div id="post-sections">
-<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
-  <div class="content">
-    <h1>All Posts</h1>
-    <p class="major">Here are all the posts we&apos;ve made so far.</p>
-    <p>All sorted out neatly by location or category. If you&apos;d rather search by tags, head to our <a href="{{ site.baseurl }}tags/">tags page</a> instead.</p>
-  </div>
-  <div class="image">
-    <img class="lazyload" alt="Priya, tying her laces in Mongolia." title="Priya, tying her laces in Mongolia."
-         srcset="{{ site.preloadimage }}" data-sizes="auto"
-         src="https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e.jpg"
-         data-srcset="https://farm6.staticflickr.com/5773/31306997811_866dc4bd7e_b.jpg 1024w, https://farm6.staticflickr.com/5773/31306997811_18af7fea99_h.jpg 1600w" />
+<section>
+  <div class="items style1 onscroll-fade-in big">
+    {% for group in grouped_author_posts %}
+    <section>
+      <div class="inner">
+        <h3 id="{{ group.name }}">{{ site.[group.name].name }}</h3>
+        <ul>
+          {% assign items = group.items | sort: 'date' | reverse %}
+          {% for item in items  %}
+            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+    {% endfor %}
   </div>
 </section>
-
-<section class="wrapper style1 align-left" id="allposts">
-  <div class="inner">
-    <h2>All Posts</h2>
-    {% for category in site.categories %}
-
-    {% assign words = category | first | remove: '["' | remove: '"]' | split: '-' %}
-    {% capture catname %}
-      {% for word in words %}{{ word | capitalize }} {% endfor %}
-    {% endcapture %}
-
-    <h3>{{ catname }}</h3>
-    <ul>
-      {% for posts in category %}
-        {% for post in posts %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      {% endfor %}
-    </ul>
-    {% endfor %}
-    <ul>
-    {% for post in site.categories.pageauthor %}
-      <li>
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt }}</p>
-        <p><a href="{{ post.url }}">Read on</a></p>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
-</section>
--->
