@@ -35,7 +35,7 @@ image:
     {% for group in grouped_author_posts %}
     <section>
       <div class="inner">
-        <h3 id="{{ group.name }}">{{ site.[group.name].name }}</h3>
+        <h3 id="{{ group.name }}">{{ site[group.name].name }}</h3>
         <ul>
           {% assign items = group.items | sort: 'date' | reverse %}
           {% for item in items  %}
