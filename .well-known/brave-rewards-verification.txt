@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: happyfeet.us
+Token: d203da427ca17913d0e79ade80d905c37e71656c4fbc5580755b9fa25b74ab29
